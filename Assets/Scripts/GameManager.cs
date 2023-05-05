@@ -1,7 +1,12 @@
+using System.Collections.Generic;
 using UnityEngine;
 
 public class GameManager : MonoBehaviour
 {
+    public AStarPathfinding pathfinding;
+    public Vector2Int startCell;
+    public Vector2Int endCell;
+
     public static GameManager Instance { get; private set; }
 
     public enum GameState
@@ -9,7 +14,7 @@ public class GameManager : MonoBehaviour
         Building,
         Wave
     }
-
+    
     public GameState currentState;
 
     private void Awake()
@@ -41,5 +46,14 @@ public class GameManager : MonoBehaviour
     public void ToggleGameState()
     {
         currentState = (currentState == GameState.Building) ? GameState.Wave : GameState.Building;
+        if (currentState == GameState.Wave)
+        {
+            // Calculate the path
+            List<Vector2Int> path = pathfinding.FindPath(startCell, endCell);
+            // Print the path to the console
+            Debug.Log("Path: " + string.Join(" -> ", path));
+            // Spawn enemies here
+        }
     }
+
 }

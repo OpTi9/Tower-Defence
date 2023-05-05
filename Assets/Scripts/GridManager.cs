@@ -8,7 +8,7 @@ public class GridManager : MonoBehaviour
     public GameObject squarePrefab;
     public float squareSize;
     
-    private int[,] grid;
+    public int[,] grid;
     
     public TowerFactory towerFactory;
 
@@ -63,6 +63,17 @@ public class GridManager : MonoBehaviour
                 PlaceTower(gridPosition);
             }
         }
+        
+        if (Input.GetMouseButtonDown(1))
+        {
+            Vector3 mouseWorldPosition = GetMouseWorldPosition();
+            Vector2Int gridPosition = GetGridPosition(mouseWorldPosition);
+
+            if (gridPosition.x >= 0 && gridPosition.x < rows && gridPosition.y >= 0 && gridPosition.y < columns)
+            {
+                Debug.Log($"Clicked on cell: ({gridPosition.x}, {gridPosition.y})");
+            }
+        }
     }
     
     private void PlaceTower(Vector2Int gridPosition)
@@ -80,6 +91,11 @@ public class GridManager : MonoBehaviour
         int row = Mathf.FloorToInt(worldPosition.x / cellSize);
         int column = Mathf.FloorToInt(worldPosition.y / cellSize);
         return new Vector2Int(row, column);
+    }
+    
+    public bool IsWithinBounds(Vector2Int position)
+    {
+        return position.x >= 0 && position.x < rows && position.y >= 0 && position.y < columns;
     }
 
     void OnDrawGizmos()
