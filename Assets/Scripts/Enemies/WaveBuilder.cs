@@ -6,7 +6,7 @@ public class WaveBuilder : MonoBehaviour
 {
     public Enemy enemyPrefab;
     public int enemyCount;
-    public float spawnDelay = 1f;
+    public float spawnDelay;
 
     public List<Enemy> BuildWave()
     {
