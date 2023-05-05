@@ -11,6 +11,21 @@ public class GridManager : MonoBehaviour
     public int[,] grid;
     
     public TowerFactory towerFactory;
+    
+    public static GridManager Instance { get; private set; }
+    
+    private void Awake()
+    {
+        if (Instance == null)
+        {
+            Instance = this;
+            DontDestroyOnLoad(gameObject);
+        }
+        else
+        {
+            Destroy(gameObject);
+        }
+    }
 
     void Start()
     {
