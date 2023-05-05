@@ -1,0 +1,39 @@
+# Unity generated files and directories
+[Tt]emp/
+[Oo]bj/
+[Bb]uild/
+[Bb]uilds/
+[Ll]ibrary/
+
+# Generated Visual Studio / MonoDevelop files
+[Ee]xported[Oo]bj/
+.vs/
+/*.userprefs
+/*.csproj
+/*.unityproj
+/*.sln
+/*.suo
+/*.tmp
+/*.user
+/*.pidb
+/*.booproj
+/*.svd
+/*.pdb
+
+# OS generated files
+.DS_Store
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+[Tt]humbs.db
+
+# Unity specific files to ignore
+sysinfo.txt
+
+# .gitkeep files can be added to empty folders to keep them in git, but they should be ignored
+.gitkeep
+
+# Custom folders and files to ignore (add your own if needed)
+# For example, if you have a folder named "CustomAssets" that you don't want to track in git:
+# CustomAssets/
