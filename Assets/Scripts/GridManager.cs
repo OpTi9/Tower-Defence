@@ -7,8 +7,10 @@ public class GridManager : MonoBehaviour
     public float cellSize;
     public GameObject squarePrefab;
     public float squareSize;
-
+    
     private int[,] grid;
+    
+    public TowerFactory towerFactory;
 
     void Start()
     {
@@ -58,9 +60,19 @@ public class GridManager : MonoBehaviour
 
             if (gridPosition.x >= 0 && gridPosition.x < rows && gridPosition.y >= 0 && gridPosition.y < columns)
             {
-                Debug.Log($"Clicked on cell: ({gridPosition.x}, {gridPosition.y})");
-                // Perform any additional actions here, e.g. placing a tower or selecting a cell
+                PlaceTower(gridPosition);
             }
+        }
+    }
+
+    
+    private void PlaceTower(Vector2Int gridPosition)
+    {
+        if (grid[gridPosition.x, gridPosition.y] == 0) // Check if the cell is empty
+        {
+            Vector3 worldPosition = GetWorldPosition(gridPosition.x, gridPosition.y);
+            towerFactory.CreateNormalTower(worldPosition);
+            grid[gridPosition.x, gridPosition.y] = 1; // Mark the cell as occupied
         }
     }
     
