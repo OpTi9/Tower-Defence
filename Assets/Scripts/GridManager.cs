@@ -53,7 +53,7 @@ public class GridManager : MonoBehaviour
 
     private void HandleMouseClick()
     {
-        if (Input.GetMouseButtonDown(0))
+        if (Input.GetMouseButtonDown(0) && GameManager.Instance.currentState == GameManager.GameState.Building)
         {
             Vector3 mouseWorldPosition = GetMouseWorldPosition();
             Vector2Int gridPosition = GetGridPosition(mouseWorldPosition);
@@ -64,7 +64,6 @@ public class GridManager : MonoBehaviour
             }
         }
     }
-
     
     private void PlaceTower(Vector2Int gridPosition)
     {
