@@ -19,20 +19,15 @@ public class AStarPathfinding : MonoBehaviour
         Dictionary<Vector2Int, Vector2Int> cameFrom = new Dictionary<Vector2Int, Vector2Int>();
         Dictionary<Vector2Int, float> costSoFar = new Dictionary<Vector2Int, float>();
 
-        Dictionary<Vector2Int, float> priorityValues = new Dictionary<Vector2Int, float>();
-        Vector2IntComparer comparer = new Vector2IntComparer(priorityValues);
-        SortedSet<Vector2Int> frontier = new SortedSet<Vector2Int>(comparer);
-        
-        priorityValues[start] = 0;
-        frontier.Add(start);
+        PriorityQueue<Vector2Int> frontier = new PriorityQueue<Vector2Int>();
 
+        frontier.Enqueue(start, 0);
         cameFrom[start] = start;
         costSoFar[start] = 0;
 
         while (frontier.Count > 0)
         {
-            Vector2Int current = frontier.Min;
-            frontier.Remove(current);
+            Vector2Int current = frontier.Dequeue();
 
             if (current == end)
             {
@@ -41,7 +36,6 @@ public class AStarPathfinding : MonoBehaviour
 
             foreach (Vector2Int direction in directions)
             {
-                
                 Vector2Int next = current + direction;
                 if (gridManager.IsWithinBounds(next) && grid[next.x, next.y] == 0)
                 {
@@ -50,18 +44,16 @@ public class AStarPathfinding : MonoBehaviour
                     {
                         costSoFar[next] = newCost;
                         float priority = newCost + Heuristic(end, next);
-                        priorityValues[next] = priority;
-                        frontier.Add(next);
+                        frontier.Enqueue(next, priority);
                         cameFrom[next] = current;
                     }
-
                 }
             }
         }
 
         return ReconstructPath(cameFrom, start, end);
     }
-
+    
     private float Heuristic(Vector2Int a, Vector2Int b)
     {
         return Mathf.Abs(a.x - b.x) + Mathf.Abs(a.y - b.y);
