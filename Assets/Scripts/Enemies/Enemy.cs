@@ -12,6 +12,17 @@ public abstract class Enemy : MonoBehaviour
         StartCoroutine(MoveAlongPath(path));
     }
 
+    public void TakeDamage(int damage)
+    {
+        health -= damage;
+
+        if (health <= 0)
+        {
+            // TODO: enemy spawner must be notified that this enemy is destroyed
+            Destroy(gameObject);
+        }
+    }
+
     private IEnumerator MoveAlongPath(List<Vector2Int> path)
     {
         Vector3[] worldPath = new Vector3[path.Count];

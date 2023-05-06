@@ -12,6 +12,8 @@ public class Projectile : MonoBehaviour
 
     [Header("Attributes")] 
     private float projectileSpeed = 5f;
+
+    private int damage = 1;
     
     private void FixedUpdate()
     {
@@ -30,6 +32,7 @@ public class Projectile : MonoBehaviour
     private void OnCollisionEnter2D(Collision2D other)
     {
         // take health from enemy
+        other.gameObject.GetComponent<Enemy>().TakeDamage(damage);
         Destroy(gameObject);
     }
 }
