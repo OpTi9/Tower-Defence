@@ -7,9 +7,9 @@ public class NormalTower : Tower
     void Start()
     {
         // Initialize NormalTower properties here
-        damage = 10;
-        attackSpeed = 1f;
-        range = 3f;
+        damage = 1;
+        attackSpeed = 2f;
+        range = 2f;
     }
 
 }

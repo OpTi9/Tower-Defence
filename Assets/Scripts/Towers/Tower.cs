@@ -8,13 +8,18 @@ public abstract class Tower : MonoBehaviour
 {
     public int damage;
     public float attackSpeed;
-    private float rotationSpeed = 200f;
     public float range;
 
+    public GameObject projectilePrefab;
+    public Transform firingPoint;
+    
     public LayerMask enemyMask;
-
-    private Transform target;
+    
+    private float rotationSpeed = 200f;
     public Transform rotationPoint;
+    
+    private Transform target;
+    private float timeUntilFire;
 
     private void Update()
     {
@@ -29,16 +34,34 @@ public abstract class Tower : MonoBehaviour
         if (!CheckTargetIsInRange())
         {
             target = null;
-            Debug.Log("no target");
         }
+        else
+        {
+            // shoot
+            timeUntilFire += Time.deltaTime;
+
+            if (timeUntilFire >= 1f / attackSpeed)
+            {
+                Shoot();
+            }
+        }
+    }
+
+    private void Shoot()
+    {
+        Debug.Log("Shoot");
+        GameObject projectileObject = Instantiate(projectilePrefab, firingPoint.position, Quaternion.identity);
+        Projectile projectileScript = projectileObject.GetComponent<Projectile>();
+        projectileScript.SetTarget(target);
+        
+        timeUntilFire = 0f;
     }
 
     private void FindTarget()
     {
-        Debug.Log("starting to look for target");
         RaycastHit2D[] hits =
             Physics2D.CircleCastAll(transform.position, range, (Vector2) transform.position, 0f, enemyMask);
-        Debug.Log(hits);
+        
         if (hits.Length > 0)
         {
             target = hits[0].transform;
