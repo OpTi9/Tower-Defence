@@ -112,19 +112,5 @@ public class GridManager : MonoBehaviour
     {
         return position.x >= 0 && position.x < rows && position.y >= 0 && position.y < columns;
     }
-
-    void OnDrawGizmos()
-    {
-        if (grid != null)
-        {
-            for (int i = 0; i < rows; i++)
-            {
-                for (int j = 0; j < columns; j++)
-                {
-                    Gizmos.color = (grid[i, j] == 0) ? Color.white : Color.black;
-                    Gizmos.DrawCube(GetWorldPosition(i, j), Vector3.one * cellSize * 0.9f);
-                }
-            }
-        }
-    }
+    
 }

@@ -372,6 +372,10 @@ PrefabInstance:
     m_TransformParent: {fileID: 486650009}
     m_Modifications:
     - target: {fileID: 1789308879996984204, guid: b80ba13173892f54689e8e6263c5173c, type: 3}
+      propertyPath: enemyCount
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1789308879996984204, guid: b80ba13173892f54689e8e6263c5173c, type: 3}
       propertyPath: spawnDelay
       value: 0.5
       objectReference: {fileID: 0}

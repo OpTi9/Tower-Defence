@@ -12,5 +12,4 @@ public class NormalTower : Tower
         range = 3f;
     }
 
-    // Add any additional NormalTower-specific methods or properties here
 }
