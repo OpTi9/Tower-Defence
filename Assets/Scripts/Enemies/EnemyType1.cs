@@ -7,7 +7,7 @@ public class EnemyType1 : Enemy
 {
     void Start()
     {
-        speed = 2;
+        speed = 8;
         health = 5;
     }
 }

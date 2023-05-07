@@ -28,9 +28,8 @@ public class WaveManager : MonoBehaviour
         onEnemyDestroy.AddListener(EnemyDestroyed);
     }
 
-    public void StartSpawningEnemies(List<Vector2Int> path)
+    public void StartSpawningEnemies()
     {
-        currentPath = path;
         StartCoroutine(StartWave());
     }
 
@@ -44,6 +43,10 @@ public class WaveManager : MonoBehaviour
         Debug.Log("wave started");
         yield return new WaitForSeconds(delay);
         GameManager.Instance.ChangeState(GameManager.GameState.Wave);
+
+        // Update the currentPath before starting a new wave
+        currentPath = GameManager.Instance.GetPath();
+
         isSpawning = true;
         enemiesLeftToSpawn = EnemiesPerWave();
     }
@@ -81,7 +84,13 @@ public class WaveManager : MonoBehaviour
     private void SpawnEnemy()
     {
         GameObject prefabToSpawn = enemyPrefabs[0];
-        Enemy newEnemy = Instantiate(prefabToSpawn).GetComponent<Enemy>();
+        GameObject newEnemyObject = Instantiate(prefabToSpawn);
+
+        // Set the enemy's position to the start cell's world position
+        Vector3 startPosition = GridManager.Instance.GetWorldPosition(currentPath[0].x, currentPath[0].y);
+        newEnemyObject.transform.position = startPosition;
+
+        Enemy newEnemy = newEnemyObject.GetComponent<Enemy>();
         newEnemy.Move(currentPath);
     }
 

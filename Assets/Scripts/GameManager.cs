@@ -7,7 +7,10 @@ public class GameManager : MonoBehaviour
     public Vector2Int startCell;
     public Vector2Int endCell;
     
-    public WaveManager waveBuilder;
+    public GameObject startCellPrefab;
+    public GameObject endCellPrefab;
+    
+    public WaveManager waveManager;
 
     public static GameManager Instance { get; private set; }
 
@@ -18,6 +21,11 @@ public class GameManager : MonoBehaviour
     }
     
     public GameState currentState;
+    
+    public List<Vector2Int> GetPath()
+    {
+        return pathfinding.FindPath(startCell, endCell);
+    }
 
     private void Awake()
     {
@@ -34,6 +42,7 @@ public class GameManager : MonoBehaviour
 
     private void Start()
     {
+        PlaceStartAndEndCellPrefabs();
         Invoke("StartWave", 5f);
     }
     
@@ -50,6 +59,16 @@ public class GameManager : MonoBehaviour
         // Print the path to the console
         Debug.Log("Path: " + string.Join(" -> ", path));
         // Start spawning enemies
-        waveBuilder.StartSpawningEnemies(path);
+        waveManager.StartSpawningEnemies();
+    }
+    
+    private void PlaceStartAndEndCellPrefabs()
+    {
+        GridManager gridManager = GridManager.Instance;
+        Vector3 startCellPosition = gridManager.GetWorldPosition(startCell.x, startCell.y);
+        Vector3 endCellPosition = gridManager.GetWorldPosition(endCell.x, endCell.y);
+
+        Instantiate(startCellPrefab, startCellPosition, Quaternion.identity);
+        Instantiate(endCellPrefab, endCellPosition, Quaternion.identity);
     }
 }
