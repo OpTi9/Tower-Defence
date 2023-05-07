@@ -49,7 +49,6 @@ public abstract class Tower : MonoBehaviour
 
     private void Shoot()
     {
-        Debug.Log("Shoot");
         GameObject projectileObject = Instantiate(projectilePrefab, firingPoint.position, Quaternion.identity);
         Projectile projectileScript = projectileObject.GetComponent<Projectile>();
         projectileScript.SetTarget(target);

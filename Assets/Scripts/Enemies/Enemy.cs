@@ -7,6 +7,8 @@ public abstract class Enemy : MonoBehaviour
     public int health;
     public float speed;
 
+    private bool isDestroyed = false;
+
     public void Move(List<Vector2Int> path)
     {
         StartCoroutine(MoveAlongPath(path));
@@ -16,9 +18,11 @@ public abstract class Enemy : MonoBehaviour
     {
         health -= damage;
 
-        if (health <= 0)
+        if (health <= 0 && !isDestroyed)
         {
             // TODO: enemy spawner must be notified that this enemy is destroyed
+            WaveBuilder.onEnemyDestroy.Invoke();
+            isDestroyed = true;
             Destroy(gameObject);
         }
     }
@@ -42,6 +46,7 @@ public abstract class Enemy : MonoBehaviour
         }
 
         // Enemy reached the end cell
+        WaveBuilder.onEnemyDestroy.Invoke();
         Destroy(gameObject);
     }
 }

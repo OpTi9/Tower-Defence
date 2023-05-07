@@ -8,6 +8,6 @@ public class EnemyType1 : Enemy
     void Start()
     {
         speed = 2;
-        health = 100;
+        health = 5;
     }
 }
