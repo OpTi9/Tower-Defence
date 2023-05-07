@@ -9,5 +9,6 @@ public class EnemyType1 : Enemy
     {
         speed = 8;
         health = 5;
+        reward = 1;
     }
 }

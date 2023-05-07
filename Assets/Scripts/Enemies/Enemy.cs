@@ -6,6 +6,7 @@ public abstract class Enemy : MonoBehaviour
 {
     public int health;
     public float speed;
+    public int reward;
 
     private bool isDestroyed = false;
 
@@ -24,6 +25,7 @@ public abstract class Enemy : MonoBehaviour
             WaveManager.onEnemyDestroy.Invoke();
             isDestroyed = true;
             Destroy(gameObject);
+            CurrencyManager.Instance.IncreaseCurrency(reward);
         }
     }
 
