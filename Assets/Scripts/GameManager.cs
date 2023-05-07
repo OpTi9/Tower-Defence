@@ -7,7 +7,7 @@ public class GameManager : MonoBehaviour
     public Vector2Int startCell;
     public Vector2Int endCell;
     
-    public WaveBuilder waveBuilder;
+    public WaveManager waveBuilder;
 
     public static GameManager Instance { get; private set; }
 

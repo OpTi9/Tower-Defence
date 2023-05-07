@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Events;
 
-public class WaveBuilder : MonoBehaviour
+public class WaveManager : MonoBehaviour
 {
     [Header("Attributes")]
     [SerializeField] private GameObject[] enemyPrefabs;

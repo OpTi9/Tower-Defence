@@ -500,7 +500,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1789308879996984206, guid: b80ba13173892f54689e8e6263c5173c, type: 3}
       propertyPath: m_Name
-      value: WaveBuilder
+      value: WaveManager
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b80ba13173892f54689e8e6263c5173c, type: 3}

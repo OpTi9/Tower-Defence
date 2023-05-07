@@ -21,7 +21,7 @@ public abstract class Enemy : MonoBehaviour
         if (health <= 0 && !isDestroyed)
         {
             // TODO: enemy spawner must be notified that this enemy is destroyed
-            WaveBuilder.onEnemyDestroy.Invoke();
+            WaveManager.onEnemyDestroy.Invoke();
             isDestroyed = true;
             Destroy(gameObject);
         }
@@ -46,7 +46,7 @@ public abstract class Enemy : MonoBehaviour
         }
 
         // Enemy reached the end cell
-        WaveBuilder.onEnemyDestroy.Invoke();
+        WaveManager.onEnemyDestroy.Invoke();
         Destroy(gameObject);
     }
 }
