@@ -6,15 +6,9 @@ using UnityEngine;
 public class BuildManager : MonoBehaviour
 {
     public static BuildManager Instance { get; private set; }
-
-    public GameObject[] towerPrefabs;
-
+    
+    public TowerFactory[] towerFactories;
     private int selectedTower = 0;
-
-    public GameObject GetSelectedTower()
-    {
-        return towerPrefabs[selectedTower];
-    }
 
     private void Awake()
     {
@@ -23,4 +17,17 @@ public class BuildManager : MonoBehaviour
             Instance = this;
         }
     }
+
+    public void BuildTower(Vector2Int gridPosition, Vector3 worldPosition)
+    {
+        if (GridManager.Instance.grid[gridPosition.x, gridPosition.y] == 0) // Check if the cell is empty
+        {
+            TowerFactory selectedTowerFactory = towerFactories[selectedTower];
+            selectedTowerFactory.CreateTower(worldPosition);
+            GridManager.Instance.grid[gridPosition.x, gridPosition.y] = 1; // Mark the cell as occupied
+        }
+    }
 }
+
+
+

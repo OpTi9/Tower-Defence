@@ -9,9 +9,7 @@ public class GridManager : MonoBehaviour
     public float squareSize;
     
     public int[,] grid;
-    
-    public TowerFactory towerFactory;
-    
+
     public static GridManager Instance { get; private set; }
     
     private void Awake()
@@ -31,12 +29,7 @@ public class GridManager : MonoBehaviour
     {
         CreateGrid();
     }
-    
-    void Update()
-    {
-        HandleMouseClick();
-    }
-    
+
     private void CreateGrid()
     {
         grid = new int[rows, columns];
@@ -66,41 +59,6 @@ public class GridManager : MonoBehaviour
         return Camera.main.ScreenToWorldPoint(mousePosition);
     }
 
-    private void HandleMouseClick()
-    {
-        if (Input.GetMouseButtonDown(0) && GameManager.Instance.currentState == GameManager.GameState.Building)
-        {
-            Vector3 mouseWorldPosition = GetMouseWorldPosition();
-            Vector2Int gridPosition = GetGridPosition(mouseWorldPosition);
-
-            if (gridPosition.x >= 0 && gridPosition.x < rows && gridPosition.y >= 0 && gridPosition.y < columns)
-            {
-                PlaceTower(gridPosition);
-            }
-        }
-        
-        if (Input.GetMouseButtonDown(1))
-        {
-            Vector3 mouseWorldPosition = GetMouseWorldPosition();
-            Vector2Int gridPosition = GetGridPosition(mouseWorldPosition);
-
-            if (gridPosition.x >= 0 && gridPosition.x < rows && gridPosition.y >= 0 && gridPosition.y < columns)
-            {
-                Debug.Log($"Clicked on cell: ({gridPosition.x}, {gridPosition.y})");
-            }
-        }
-    }
-    
-    private void PlaceTower(Vector2Int gridPosition)
-    {
-        if (grid[gridPosition.x, gridPosition.y] == 0) // Check if the cell is empty
-        {
-            Vector3 worldPosition = GetWorldPosition(gridPosition.x, gridPosition.y);
-            towerFactory.CreateNormalTower(worldPosition);
-            grid[gridPosition.x, gridPosition.y] = 1; // Mark the cell as occupied
-        }
-    }
-    
     public Vector2Int GetGridPosition(Vector3 worldPosition)
     {
         int row = Mathf.FloorToInt(worldPosition.x / cellSize);
