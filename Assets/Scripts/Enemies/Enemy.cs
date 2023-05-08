@@ -21,7 +21,6 @@ public abstract class Enemy : MonoBehaviour
 
         if (health <= 0 && !isDestroyed)
         {
-            // TODO: enemy spawner must be notified that this enemy is destroyed
             WaveManager.onEnemyDestroy.Invoke();
             isDestroyed = true;
             Destroy(gameObject);

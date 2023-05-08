@@ -52,7 +52,7 @@ public abstract class Tower : MonoBehaviour
         GameObject projectileObject = Instantiate(projectilePrefab, firingPoint.position, Quaternion.identity);
         Projectile projectileScript = projectileObject.GetComponent<Projectile>();
         projectileScript.SetTarget(target);
-        
+        projectileScript.SetDamage(damage);
         timeUntilFire = 0f;
     }
 

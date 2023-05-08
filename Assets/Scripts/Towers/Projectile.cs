@@ -13,7 +13,7 @@ public class Projectile : MonoBehaviour
     [Header("Attributes")] 
     private float projectileSpeed = 5f;
 
-    private int damage = 1;
+    private int damage;
     
     private void FixedUpdate()
     {
@@ -22,6 +22,11 @@ public class Projectile : MonoBehaviour
         Vector2 direction = (target.position - transform.position).normalized;
 
         rb.velocity = direction * projectileSpeed;
+    }
+    
+    public void SetDamage(int damage)
+    {
+        this.damage = damage;
     }
 
     public void SetTarget(Transform target)

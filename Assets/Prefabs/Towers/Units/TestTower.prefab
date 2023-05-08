@@ -47,9 +47,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   damage: 5
-  attackSpeed: 5
+  attackSpeed: 1
   range: 5
-  cost: 5
   projectilePrefab: {fileID: 4783738655787574512, guid: 29df24b1344aabe4183e33cf7b25bf9c, type: 3}
   firingPoint: {fileID: 2491386769337110367}
   enemyMask:
