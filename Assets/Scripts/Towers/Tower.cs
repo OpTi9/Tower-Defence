@@ -9,6 +9,7 @@ public abstract class Tower : MonoBehaviour
     public int damage;
     public float attackSpeed;
     public float range;
+    public int cost;
 
     public GameObject projectilePrefab;
     public Transform firingPoint;

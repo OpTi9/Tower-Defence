@@ -18,6 +18,11 @@ public class BuildManager : MonoBehaviour
         }
     }
 
+    public void SetSelectedTower(int selectedTower)
+    {
+        this.selectedTower = selectedTower;
+    }
+
     public void BuildTower(Vector2Int gridPosition, Vector3 worldPosition)
     {
         if (GridManager.Instance.grid[gridPosition.x, gridPosition.y] == 0) // Check if the cell is empty
