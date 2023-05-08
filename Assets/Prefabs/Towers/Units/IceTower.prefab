@@ -9,7 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7026939478118434338}
-  - component: {fileID: -7175246265721195533}
+  - component: {fileID: 3508188740145396078}
   m_Layer: 0
   m_Name: IceTower
   m_TagString: Untagged
@@ -34,7 +34,7 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &-7175246265721195533
+--- !u!114 &3508188740145396078
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -43,11 +43,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 27016630645584930}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1740c8dc670296142a6b7c65d4e7df0c, type: 3}
+  m_Script: {fileID: 11500000, guid: 2e4a63ff7c48296408e30343e8b29d8d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   damage: 0
-  attackSpeed: 1
+  attackSpeed: 0
   range: 2
   projectilePrefab: {fileID: 4783738655787574512, guid: 29df24b1344aabe4183e33cf7b25bf9c, type: 3}
   firingPoint: {fileID: 2491386769337110367}
@@ -55,6 +55,7 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 64
   rotationPoint: {fileID: 2046991063412168746}
+  slowAmount: 0.5
 --- !u!1 &109790693571355957
 GameObject:
   m_ObjectHideFlags: 0

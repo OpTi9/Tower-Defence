@@ -9,6 +9,20 @@ public abstract class Enemy : MonoBehaviour
     public int reward;
 
     private bool isDestroyed = false;
+    
+    private float originalSpeed;
+    private Coroutine slowRoutine;
+    
+    public SpriteRenderer spriteRenderer;
+    
+    private void Start()
+    {
+        originalSpeed = speed;
+        if (spriteRenderer == null)
+        {
+            spriteRenderer = GetComponent<SpriteRenderer>();
+        }
+    }
 
     public void Move(List<Vector2Int> path)
     {
@@ -26,6 +40,30 @@ public abstract class Enemy : MonoBehaviour
             Destroy(gameObject);
             CurrencyManager.Instance.IncreaseCurrency(reward);
         }
+    }
+    
+    public void ApplySlow(float slowAmount)
+    {
+        if (slowRoutine != null)
+        {
+            StopCoroutine(slowRoutine);
+        }
+        slowRoutine = StartCoroutine(SlowRoutine(slowAmount));
+    }
+
+    private IEnumerator SlowRoutine(float slowAmount)
+    {
+        // Set color to light blue
+        spriteRenderer.color = new Color(0.6f, 0.8f, 1f, 1f);
+
+        speed = originalSpeed * (1f - slowAmount);
+        yield return new WaitForSeconds(1f); // The slow duration can be adjusted here
+        speed = originalSpeed;
+
+        // Reset color to the original color
+        spriteRenderer.color = Color.white;
+
+        slowRoutine = null;
     }
 
     private IEnumerator MoveAlongPath(List<Vector2Int> path)
