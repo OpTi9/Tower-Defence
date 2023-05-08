@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Linq;
 using UnityEngine;
 using UnityEngine.Events;
 
@@ -83,7 +84,8 @@ public class WaveManager : MonoBehaviour
 
     private void SpawnEnemy()
     {
-        GameObject prefabToSpawn = enemyPrefabs[0];
+        int enemyIndex = GetEnemyIndexForWave();
+        GameObject prefabToSpawn = enemyPrefabs[enemyIndex];
         GameObject newEnemyObject = Instantiate(prefabToSpawn);
 
         // Set the enemy's position to the start cell's world position
@@ -93,6 +95,40 @@ public class WaveManager : MonoBehaviour
         Enemy newEnemy = newEnemyObject.GetComponent<Enemy>();
         newEnemy.Move(currentPath);
     }
+    
+    private int GetEnemyIndexForWave()
+    {
+        int enemyPrefabsCount = enemyPrefabs.Length;
+        int[] enemyWeights = new int[enemyPrefabsCount];
+
+        // Calculate weights based on the current wave and enemy prefabs count
+        for (int i = 0; i < enemyPrefabsCount; i++)
+        {
+            enemyWeights[i] = Mathf.Max(1, currentWave - i);
+        }
+
+        // Calculate the total weight
+        int totalWeight = enemyWeights.Sum();
+
+        // Generate a random number between 0 and total weight
+        int randomNumber = UnityEngine.Random.Range(0, totalWeight);
+
+        // Go through enemy prefabs and check if the random number falls within the range
+        int rangeMin = 0;
+        for (int i = 0; i < enemyPrefabsCount; i++)
+        {
+            int rangeMax = rangeMin + enemyWeights[i];
+            if (randomNumber >= rangeMin && randomNumber < rangeMax)
+            {
+                return i;
+            }
+            rangeMin = rangeMax;
+        }
+
+        // Default to the first index (easiest enemy)
+        return 0;
+    }
+
 
     private int EnemiesPerWave()
     {

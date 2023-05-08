@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 3527701381053647579}
   - component: {fileID: 7777647101924456180}
   m_Layer: 6
-  m_Name: EnemyRat
+  m_Name: EnemyTree
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -47,9 +47,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 66c54e9d7f2afa745acab493a2c6dff1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  health: 2
-  speed: 2
-  reward: 1
+  health: 4
+  speed: 1
+  reward: 2
   spriteRenderer: {fileID: 2053567268309361950}
 --- !u!58 &3527701381053647579
 CircleCollider2D:
@@ -161,7 +161,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 1
-  m_Sprite: {fileID: 21300000, guid: 5bc43300e96a58b469288814fa7bd8d1, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 11409518c2a2d8b4180717b6615e53a2, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 1
   m_FlipY: 0
