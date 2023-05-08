@@ -1972,6 +1972,18 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1964551459187216619, guid: 93a5fafe5c784ab438fe06a885d0fc58, type: 3}
+      propertyPath: towerCosts.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1964551459187216619, guid: 93a5fafe5c784ab438fe06a885d0fc58, type: 3}
+      propertyPath: towerCosts.Array.data[0]
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1964551459187216619, guid: 93a5fafe5c784ab438fe06a885d0fc58, type: 3}
+      propertyPath: towerCosts.Array.data[1]
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1964551459187216619, guid: 93a5fafe5c784ab438fe06a885d0fc58, type: 3}
       propertyPath: towerFactories.Array.size
       value: 2
       objectReference: {fileID: 0}

@@ -45,3 +45,4 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   normalTowerPrefab: {fileID: 27016630645584930, guid: 9d6e145924e7888498c62bebff55e8fb, type: 3}
+  cost: 4

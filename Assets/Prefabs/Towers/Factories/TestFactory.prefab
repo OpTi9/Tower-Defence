@@ -45,3 +45,4 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   testTowerPrefab: {fileID: 27016630645584930, guid: a03fd1f4fb8f74049a11a6a89e01eae1, type: 3}
+  cost: 5
