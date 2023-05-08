@@ -32,6 +32,7 @@ public abstract class Enemy : MonoBehaviour
     public void TakeDamage(int damage)
     {
         health -= damage;
+        StartCoroutine(DamageBlink());
 
         if (health <= 0 && !isDestroyed)
         {
@@ -49,6 +50,17 @@ public abstract class Enemy : MonoBehaviour
             StopCoroutine(slowRoutine);
         }
         slowRoutine = StartCoroutine(SlowRoutine(slowAmount));
+    }
+    
+    private IEnumerator DamageBlink()
+    {
+        Color originalColor = spriteRenderer.color;
+
+        spriteRenderer.color = Color.red;
+
+        yield return new WaitForSeconds(0.1f); // Adjust the blink duration here
+
+        spriteRenderer.color = originalColor;
     }
 
     private IEnumerator SlowRoutine(float slowAmount)
