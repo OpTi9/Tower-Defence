@@ -151,6 +151,7 @@ GameObject:
   - component: {fileID: 74418752}
   - component: {fileID: 74418751}
   - component: {fileID: 74418753}
+  - component: {fileID: 74418754}
   m_Layer: 5
   m_Name: Menu
   m_TagString: Untagged
@@ -233,6 +234,27 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   currencyUI: {fileID: 1724828691}
+  anim: {fileID: 74418754}
+--- !u!95 &74418754
+Animator:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 74418749}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: f7d8d2d1930d096478c3b078d1d5fd13, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!4 &292937291 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 6098570550628973668, guid: 09c292e30f4eb534098801d7ea1415e6, type: 3}
@@ -836,7 +858,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 999879419}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 74418753}
+        m_TargetAssemblyTypeName: Menu, Assembly-CSharp
+        m_MethodName: ToggleMenu
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &999879419
 MonoBehaviour:
   m_ObjectHideFlags: 0
