@@ -1,8 +1,12 @@
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 
 public class GameManager : MonoBehaviour
 {
+    public int playerHealth;
+    [SerializeField] TextMeshProUGUI healthUI;
+    
     public AStarPathfinding pathfinding;
     public Vector2Int startCell;
     public Vector2Int endCell;
@@ -17,7 +21,8 @@ public class GameManager : MonoBehaviour
     public enum GameState
     {
         Building,
-        Wave
+        Wave,
+        GameOver
     }
     
     public GameState currentState;
@@ -25,6 +30,11 @@ public class GameManager : MonoBehaviour
     public List<Vector2Int> GetPath()
     {
         return pathfinding.FindPath(startCell, endCell);
+    }
+    
+    private void OnGUI()
+    {
+        healthUI.text = playerHealth.ToString();
     }
 
     private void Awake()
@@ -37,6 +47,18 @@ public class GameManager : MonoBehaviour
         else
         {
             Destroy(gameObject);
+        }
+    }
+
+    public void ChangePlayerHealth(int penalty)
+    {
+        Debug.Log("Changing player health. Penalty: " + penalty);
+        Debug.Log("Current health: " + playerHealth);
+        playerHealth = playerHealth - penalty;
+        Debug.Log("new health: " + playerHealth);
+        if (playerHealth <= 0)
+        {
+            GameManager.Instance.currentState = GameState.GameOver;
         }
     }
 
@@ -65,10 +87,18 @@ public class GameManager : MonoBehaviour
     private void PlaceStartAndEndCellPrefabs()
     {
         GridManager gridManager = GridManager.Instance;
+
+        // Randomize the start cell's column and set the row to 0 (first row)
+        startCell = new Vector2Int(0, Random.Range(0, gridManager.columns));
         Vector3 startCellPosition = gridManager.GetWorldPosition(startCell.x, startCell.y);
+
+        // Randomize the end cell's column and set the row to the last row
+        endCell = new Vector2Int(gridManager.rows - 1, Random.Range(0, gridManager.columns));
         Vector3 endCellPosition = gridManager.GetWorldPosition(endCell.x, endCell.y);
 
         Instantiate(startCellPrefab, startCellPosition, Quaternion.identity);
         Instantiate(endCellPrefab, endCellPosition, Quaternion.identity);
     }
+
+
 }

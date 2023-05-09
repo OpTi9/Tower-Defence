@@ -50,6 +50,7 @@ MonoBehaviour:
   health: 4
   speed: 1
   reward: 2
+  penalty: 2
   spriteRenderer: {fileID: 2053567268309361950}
 --- !u!58 &3527701381053647579
 CircleCollider2D:

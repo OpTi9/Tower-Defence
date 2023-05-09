@@ -7,6 +7,7 @@ public abstract class Enemy : MonoBehaviour
     public int health;
     public float speed;
     public int reward;
+    public int penalty;
 
     private bool isDestroyed = false;
     
@@ -98,6 +99,7 @@ public abstract class Enemy : MonoBehaviour
 
         // Enemy reached the end cell
         WaveManager.onEnemyDestroy.Invoke();
+        GameManager.Instance.ChangePlayerHealth(penalty);
         Destroy(gameObject);
     }
 }
