@@ -16,7 +16,7 @@ public abstract class Enemy : MonoBehaviour
     
     public SpriteRenderer spriteRenderer;
     
-    private void Start()
+    protected virtual void Start()
     {
         originalSpeed = speed;
         if (spriteRenderer == null)
