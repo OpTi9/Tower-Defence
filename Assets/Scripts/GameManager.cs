@@ -1,11 +1,18 @@
 using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
 {
+    private bool gameOverHandled = false;
     public int playerHealth;
     [SerializeField] TextMeshProUGUI healthUI;
+    [SerializeField] TextMeshProUGUI highScoreUI;
+    public TextMeshProUGUI highScoreList;
+    
+    [SerializeField] private GameObject enterNamePanel;
+    [SerializeField] private TMP_InputField playerNameInputField;
     
     public AStarPathfinding pathfinding;
     public Vector2Int startCell;
@@ -15,6 +22,9 @@ public class GameManager : MonoBehaviour
     public GameObject endCellPrefab;
     
     public WaveManager waveManager;
+    
+    [SerializeField] private GameObject gameOverPanel;
+    public int highScore;
 
     public static GameManager Instance { get; private set; }
 
@@ -25,12 +35,35 @@ public class GameManager : MonoBehaviour
         GameOver
     }
     
+    public void UpdateHighScoreText()
+    {
+        highScoreList.text = "";
+
+        for (int i = 0; i < HighScoreManager.Instance.highScores.Count; i++)
+        {
+            HighScoreManager.HighScoreEntry entry = HighScoreManager.Instance.highScores[i];
+            highScoreList.text += $"{i + 1}. {entry.playerName} - {entry.score}\n";
+        }
+    }
+    
     private void Update()
     {
-        if (currentState == GameState.GameOver)
+        if (currentState == GameState.GameOver && !gameOverHandled)
         {
+            gameOverHandled = true;
             GameOver();
         }
+    }
+    
+    private void ShowGameOverPanel()
+    {
+        UpdateHighScoreText();
+        gameOverPanel.SetActive(true);
+    }
+
+    private void HideGameOverPanel()
+    {
+        gameOverPanel.SetActive(false);
     }
 
     
@@ -43,10 +76,54 @@ public class GameManager : MonoBehaviour
     
     private void GameOver()
     {
-        // Show the game over UI
-        // Add logic for restarting the game or going back to the main menu
-        Debug.Log("game over");
+        highScore = CurrencyManager.Instance.totalCurrencyEarned;
+        highScoreUI.text = highScore.ToString();
+        if (HighScoreManager.Instance.IsHighScore(highScore))
+        {
+            ShowEnterNamePanel();
+        }
+        else
+        {
+            ShowGameOverPanel();
+        }
     }
+    
+    public void OnNameEnteredButtonClick()
+    {
+        Debug.Log("OnNameEnteredButtonClick called");
+        string playerName = playerNameInputField.text;
+        if (!string.IsNullOrEmpty(playerName))
+        {
+            HighScoreManager.Instance.AddHighScore(playerName, highScore);
+            HideEnterNamePanel();
+            ShowGameOverPanel();
+        }
+    }
+    
+    private void ShowEnterNamePanel()
+    {
+        Debug.Log("ShowEnterNamePanel called");
+        enterNamePanel.SetActive(true);
+    }
+
+    private void HideEnterNamePanel()
+    {
+        Debug.Log("HideEnterNamePanel called");
+        enterNamePanel.SetActive(false);
+    }
+    
+    public void OnRestartButtonClick()
+    {
+        HideGameOverPanel();
+        gameOverHandled = false;
+        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+    }
+
+    public void OnExitButtonClick()
+    {
+        Application.Quit();
+    }
+
 
     
     private void OnGUI()

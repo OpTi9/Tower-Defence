@@ -8,6 +8,7 @@ public class CurrencyManager : MonoBehaviour
     public static CurrencyManager Instance { get; private set; }
     
     public int currency;
+    public int totalCurrencyEarned;
 
     private void Awake()
     {
@@ -25,11 +26,13 @@ public class CurrencyManager : MonoBehaviour
     private void Start()
     {
         currency = 10;
+        totalCurrencyEarned += currency;
     }
 
     public void IncreaseCurrency(int amount)
     {
         currency += amount;
+        totalCurrencyEarned += amount;
     }
     
     public bool SpendCurrency(int amount)

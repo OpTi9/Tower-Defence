@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
+using TMPro;
 using UnityEngine;
 using UnityEngine.Events;
 
@@ -8,6 +9,7 @@ public class WaveManager : MonoBehaviour
 {
     [Header("Attributes")]
     [SerializeField] private GameObject[] enemyPrefabs;
+    [SerializeField] TextMeshProUGUI waveUI;
 
     [Header("Wave Settings")]
     [SerializeField] private int baseEnemies = 8;
@@ -32,6 +34,11 @@ public class WaveManager : MonoBehaviour
     public void StartSpawningEnemies()
     {
         StartCoroutine(StartWave());
+    }
+    
+    private void OnGUI()
+    {
+        waveUI.text = currentWave.ToString();
     }
 
     private void EnemyDestroyed()
