@@ -21,7 +21,7 @@ public abstract class Tower : MonoBehaviour
     private Transform target;
     private float timeUntilFire;
 
-    private void Update()
+    protected virtual void Update()
     {
         if (target == null)
         {

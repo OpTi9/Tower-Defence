@@ -6,8 +6,9 @@ public class IceTower : Tower
 {
     public float slowAmount = 0.5f; // Represents the percentage by which the speed is reduced (0.5 = 50% reduction)
 
-    private void Update()
+    protected override void Update()
     {
+        base.Update();
         // Find all enemies within range
         RaycastHit2D[] hits =
             Physics2D.CircleCastAll(transform.position, range, (Vector2)transform.position, 0f, enemyMask);
