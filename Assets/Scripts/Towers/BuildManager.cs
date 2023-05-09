@@ -30,6 +30,11 @@ public class BuildManager : MonoBehaviour
 
     public void BuildTower(Vector2Int gridPosition, Vector3 worldPosition)
     {
+        if (GameManager.Instance.currentState == GameManager.GameState.GameOver)
+        {
+            return;
+        }
+        
         if (GridManager.Instance.grid[gridPosition.x, gridPosition.y] == 0) // Check if the cell is empty
         {
             TowerFactory selectedTowerFactory = towerFactories[selectedTower];

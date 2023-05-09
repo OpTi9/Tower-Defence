@@ -64,6 +64,11 @@ public class WaveManager : MonoBehaviour
 
     private void Update()
     {
+        if (GameManager.Instance.currentState == GameManager.GameState.GameOver)
+        {
+            return;
+        }
+        
         if (!isSpawning) return;
 
         timeSinceLastSpawn += Time.deltaTime;

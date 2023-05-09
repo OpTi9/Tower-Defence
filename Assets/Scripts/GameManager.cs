@@ -25,12 +25,29 @@ public class GameManager : MonoBehaviour
         GameOver
     }
     
+    private void Update()
+    {
+        if (currentState == GameState.GameOver)
+        {
+            GameOver();
+        }
+    }
+
+    
     public GameState currentState;
     
     public List<Vector2Int> GetPath()
     {
         return pathfinding.FindPath(startCell, endCell);
     }
+    
+    private void GameOver()
+    {
+        // Show the game over UI
+        // Add logic for restarting the game or going back to the main menu
+        Debug.Log("game over");
+    }
+
     
     private void OnGUI()
     {
