@@ -18,8 +18,8 @@ public abstract class Tower : MonoBehaviour
     private float rotationSpeed = 200f;
     public Transform rotationPoint;
     
-    private Transform target;
-    private float timeUntilFire;
+    protected Transform target;
+    protected float timeUntilFire;
 
     protected virtual void Update()
     {
@@ -47,7 +47,7 @@ public abstract class Tower : MonoBehaviour
         }
     }
 
-    private void Shoot()
+    protected virtual void Shoot()
     {
         GameObject projectileObject = Instantiate(projectilePrefab, firingPoint.position, Quaternion.identity);
         Projectile projectileScript = projectileObject.GetComponent<Projectile>();

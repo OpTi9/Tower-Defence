@@ -32,6 +32,7 @@ public abstract class Enemy : MonoBehaviour
 
     public void TakeDamage(int damage)
     {
+        Debug.Log("Recieved damage: " + damage);
         health -= damage;
         StartCoroutine(DamageBlink());
 

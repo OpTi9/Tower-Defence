@@ -13,7 +13,7 @@ public class Projectile : MonoBehaviour
     [Header("Attributes")] 
     private float projectileSpeed = 5f;
 
-    private int damage;
+    protected int damage;
     
     private void FixedUpdate()
     {
@@ -34,10 +34,15 @@ public class Projectile : MonoBehaviour
         this.target = target;
     }
 
+    protected virtual void OnHitEnemy(Enemy enemy)
+    {
+        enemy.TakeDamage(damage);
+    }
+
     private void OnCollisionEnter2D(Collision2D other)
     {
-        // take health from enemy
-        other.gameObject.GetComponent<Enemy>().TakeDamage(damage);
+        Enemy enemy = other.gameObject.GetComponent<Enemy>();
+        OnHitEnemy(enemy);
         Destroy(gameObject);
     }
 }
