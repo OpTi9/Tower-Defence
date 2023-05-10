@@ -3,9 +3,13 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEditor;
 using UnityEngine;
+using UnityEngine.UI;
 
 public abstract class Tower : MonoBehaviour
 {
+    [SerializeField] private GameObject upgradeUI;
+    [SerializeField] private Button upgradeButton;
+    
     public int damage;
     public float attackSpeed;
     public float range;
@@ -79,6 +83,16 @@ public abstract class Tower : MonoBehaviour
     private bool CheckTargetIsInRange()
     {
         return Vector2.Distance(target.position, transform.position) <= range;
+    }
+
+    public void OpenUpgradeUI()
+    {
+        upgradeUI.SetActive(true);
+    }
+    
+    public void CloseUpgradeUI()
+    {
+        upgradeUI.SetActive(false);
     }
 
     private void OnDrawGizmosSelected()
