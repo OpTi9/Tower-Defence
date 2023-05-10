@@ -1,6 +1,7 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEditor;
 using UnityEngine;
 using UnityEngine.UI;
@@ -9,10 +10,18 @@ public abstract class Tower : MonoBehaviour
 {
     [SerializeField] private GameObject upgradeUI;
     [SerializeField] private Button upgradeButton;
+    [SerializeField] TextMeshProUGUI towerLevelUI;
     
     public int damage;
     public float attackSpeed;
     public float range;
+    
+    private float baseAttackSpeed;
+    private float baseRange;
+    
+    public int towerCost;
+    private int upgradeCost;
+    private int towerLevel;
 
     public GameObject projectilePrefab;
     public Transform firingPoint;
@@ -24,6 +33,31 @@ public abstract class Tower : MonoBehaviour
     
     protected Transform target;
     protected float timeUntilFire;
+    
+    public int GetTowerCost()
+    {
+        return towerCost;
+    }
+
+    public void SetTowerCost(int cost)
+    {
+        towerCost = cost;
+    }
+    
+    private void OnGUI()
+    {
+        towerLevelUI.text = towerLevel.ToString();
+    }
+
+    private void Start()
+    {
+        baseAttackSpeed = attackSpeed;
+        baseRange = range;
+        upgradeCost = towerCost;
+        towerLevel = 1;
+        
+        upgradeButton.onClick.AddListener(Upgrade);
+    }
 
     protected virtual void Update()
     {
@@ -85,6 +119,33 @@ public abstract class Tower : MonoBehaviour
         return Vector2.Distance(target.position, transform.position) <= range;
     }
 
+    public void Upgrade()
+    {
+        if (upgradeCost > CurrencyManager.Instance.currency) return;
+        CurrencyManager.Instance.SpendCurrency(upgradeCost);
+        towerLevel += 1;
+        upgradeCost *= 2;
+        damage += 1;
+        attackSpeed = upgradeAttackSpeed();
+        range = upgradeRange();
+        CloseUpgradeUI();
+        Debug.Log("new tower level: " + towerLevel);
+        Debug.Log("new tower upgrade cost: " + upgradeCost);
+        Debug.Log("new tower damage: " + damage);
+        Debug.Log("new tower attackSpeed: " + attackSpeed);
+        Debug.Log("new tower range: " + range);
+    }
+
+    private float upgradeAttackSpeed()
+    {
+        return baseAttackSpeed * Mathf.Pow(towerLevel, 0.5f);
+    }
+
+    private float upgradeRange()
+    {
+        return baseRange * Mathf.Pow(towerLevel, 0.2f);
+    }
+
     public void OpenUpgradeUI()
     {
         upgradeUI.SetActive(true);
@@ -93,12 +154,7 @@ public abstract class Tower : MonoBehaviour
     public void CloseUpgradeUI()
     {
         upgradeUI.SetActive(false);
-    }
-
-    private void OnDrawGizmosSelected()
-    {
-        Handles.color = Color.cyan;
-        Handles.DrawWireDisc(transform.position, transform.forward, range);
+        UIManager.Instance.SetHoveringState(false);
     }
 
 }

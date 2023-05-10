@@ -20,6 +20,7 @@ public class Plot : MonoBehaviour
 
     private void OnMouseEnter()
     {
+        if (UIManager.Instance.IsHoveringUI()) return;
         sr.sprite = hoverSprite;
     }
 
@@ -30,9 +31,24 @@ public class Plot : MonoBehaviour
 
     private void OnMouseDown()
     {
+        if (UIManager.Instance.IsHoveringUI()) return;
+        
         if (GameManager.Instance.currentState == GameManager.GameState.Building)
         {
-            BuildManager.Instance.BuildTower(gridPosition, transform.position);
+            if (tower == null)
+            {
+                // If there is no tower, build one
+                tower = BuildManager.Instance.BuildTower(gridPosition, transform.position);
+            }
+            else
+            {
+                // If there is already a tower, open its upgrade UI
+                Tower towerScript = tower.GetComponent<Tower>();
+                if (towerScript != null)
+                {
+                    towerScript.OpenUpgradeUI();
+                }
+            }
         }
     }
 }
