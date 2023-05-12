@@ -6072,7 +6072,7 @@ PrefabInstance:
       objectReference: {fileID: 44681087}
     - target: {fileID: 1577439067907691083, guid: 4e4f706d030e05b4b983e31becfeed35, type: 3}
       propertyPath: playerHealth
-      value: 3
+      value: 100
       objectReference: {fileID: 0}
     - target: {fileID: 1577439067907691083, guid: 4e4f706d030e05b4b983e31becfeed35, type: 3}
       propertyPath: gameOverPanel

@@ -50,6 +50,12 @@ public class AStarPathfinding : MonoBehaviour
                 }
             }
         }
+        
+        if (!cameFrom.ContainsKey(end))
+        {
+            // If the end cell is not reached, return null
+            return null;
+        }
 
         return ReconstructPath(cameFrom, start, end);
     }

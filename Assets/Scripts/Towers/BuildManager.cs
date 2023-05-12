@@ -40,10 +40,25 @@ public class BuildManager : MonoBehaviour
             int towerCost = newTower.towerCost; // Get the cost from the tower itself
             Debug.Log("Cost:" + towerCost);
             Debug.Log("Currency:" + CurrencyManager.Instance.currency);
+            
             if (CurrencyManager.Instance.currency >= towerCost)
             {
+                // Simulate building the tower by marking the cell as occupied
+                GridManager.Instance.grid[gridPosition.x, gridPosition.y] = 1;
+        
+                // Check if a path still exists
+                List<Vector2Int> path = GameManager.Instance.GetPath();
+                if (path == null)
+                {
+                    // If no path exists, revert the grid, destroy the tower, and notify the player
+                    GridManager.Instance.grid[gridPosition.x, gridPosition.y] = 0;
+                    Destroy(newTowerObject); // Destroy the tower if it blocks the path
+                    Debug.Log("Cannot build tower. It would block the path.");
+                    return null;
+                }
+
+                // If a path exists, build the tower and subtract its cost
                 builtTower = newTowerObject;
-                GridManager.Instance.grid[gridPosition.x, gridPosition.y] = 1; // Mark the cell as occupied
                 CurrencyManager.Instance.SpendCurrency(towerCost); // substract tower's cost from player's currency
             }
             else
@@ -52,8 +67,10 @@ public class BuildManager : MonoBehaviour
                 Destroy(newTowerObject); // Destroy the tower if not enough currency
             }
         }
+    
         return builtTower;
     }
+
 
 }
 

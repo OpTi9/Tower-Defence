@@ -10,6 +10,7 @@ public abstract class Tower : MonoBehaviour
 {
     [SerializeField] private GameObject upgradeUI;
     [SerializeField] private Button upgradeButton;
+    [SerializeField] private Button sellButton;
     [SerializeField] TextMeshProUGUI towerLevelUI;
     
     public int damage;
@@ -57,6 +58,7 @@ public abstract class Tower : MonoBehaviour
         towerLevel = 1;
         
         upgradeButton.onClick.AddListener(Upgrade);
+        sellButton.onClick.AddListener(Sell);
     }
 
     protected virtual void Update()
@@ -135,6 +137,17 @@ public abstract class Tower : MonoBehaviour
         Debug.Log("new tower attackSpeed: " + attackSpeed);
         Debug.Log("new tower range: " + range);
     }
+    
+    public void Sell()
+    {
+        // Add half of the tower cost to the player's currency
+        int sellValue = towerCost / 2;
+        CurrencyManager.Instance.IncreaseCurrency(sellValue);
+
+        // Destroy the tower game object
+        Destroy(gameObject);
+    }
+
 
     private float upgradeAttackSpeed()
     {

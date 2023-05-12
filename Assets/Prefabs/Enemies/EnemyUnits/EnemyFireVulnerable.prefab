@@ -85,7 +85,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   health: 6
-  speed: 2
+  speed: 5
   reward: 3
   penalty: 3
   spriteRenderer: {fileID: 2053567268309361950}
