@@ -166,17 +166,6 @@ public class GameManager : MonoBehaviour
         currentState = newState;
         gameStateUI.text = newState.ToString();
     }
-
-
-    private void StartWave()
-    {
-        // Calculate the path
-        List<Vector2Int> path = pathfinding.FindPath(startCell, endCell);
-        // Print the path to the console
-        Debug.Log("Path: " + string.Join(" -> ", path));
-        // Start spawning enemies
-        waveManager.StartSpawningEnemies();
-    }
     
     private void PlaceStartAndEndCellPrefabs()
     {

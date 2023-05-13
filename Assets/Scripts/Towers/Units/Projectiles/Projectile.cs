@@ -11,7 +11,7 @@ public class Projectile : MonoBehaviour
     public Rigidbody2D rb;
 
     [Header("Attributes")] 
-    private float projectileSpeed = 5f;
+    private float projectileSpeed = 6f;
 
     protected int damage;
     
