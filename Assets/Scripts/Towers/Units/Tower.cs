@@ -140,15 +140,36 @@ public abstract class Tower : MonoBehaviour
     
     public void Sell()
     {
+        if (GameManager.Instance.currentState != GameManager.GameState.Building)
+        {
+            return;
+        }
         // Add half of the tower cost to the player's currency
         int sellValue = towerCost / 2;
         CurrencyManager.Instance.IncreaseCurrency(sellValue);
 
+        // Get the Plot script of the parent game object
+        Plot plotScript = GetComponentInParent<Plot>();
+        if (plotScript != null)
+        {
+            Debug.Log("removing tower");
+            plotScript.RemoveTower();
+        
+            // Also update the grid in the GridManager
+            Vector2Int gridPosition = GridManager.Instance.GetGridPosition(plotScript.transform.position);
+            if (GridManager.Instance.IsWithinBounds(gridPosition))
+            {
+                GridManager.Instance.grid[gridPosition.x, gridPosition.y] = 0; // Mark the cell as empty
+                Debug.Log(GridManager.Instance.grid[gridPosition.x, gridPosition.y]);
+            }
+        }
+
         // Destroy the tower game object
         Destroy(gameObject);
+        UIManager.Instance.SetHoveringState(false);
     }
 
-
+    
     private float upgradeAttackSpeed()
     {
         return baseAttackSpeed * Mathf.Pow(towerLevel, 0.5f);

@@ -45,6 +45,7 @@ public class BuildManager : MonoBehaviour
             {
                 // Simulate building the tower by marking the cell as occupied
                 GridManager.Instance.grid[gridPosition.x, gridPosition.y] = 1;
+                Debug.Log(GridManager.Instance.grid[gridPosition.x, gridPosition.y]);
         
                 // Check if a path still exists
                 List<Vector2Int> path = GameManager.Instance.GetPath();
@@ -59,7 +60,15 @@ public class BuildManager : MonoBehaviour
 
                 // If a path exists, build the tower and subtract its cost
                 builtTower = newTowerObject;
-                CurrencyManager.Instance.SpendCurrency(towerCost); // substract tower's cost from player's currency
+                CurrencyManager.Instance.SpendCurrency(towerCost); // subtract tower's cost from player's currency
+
+                // Associate the built tower with the plot
+                Plot plot = GridManager.Instance.GetPlotAtGridPosition(gridPosition);
+                if (plot != null)
+                {
+                    plot.SetTower(builtTower);
+                    builtTower.transform.SetParent(plot.transform);
+                }
             }
             else
             {

@@ -28,7 +28,17 @@ public class Plot : MonoBehaviour
     {
         sr.sprite = defaultSprite;
     }
-
+    
+    public void RemoveTower()
+    {
+        tower = null;
+    }
+    
+    public void SetTower(GameObject newTower)
+    {
+        tower = newTower;
+    }
+    
     private void OnMouseDown()
     {
         if (UIManager.Instance.IsHoveringUI()) return;

@@ -9,25 +9,44 @@ public class WaveManager : MonoBehaviour
 {
     [Header("Attributes")]
     [SerializeField] private GameObject[] enemyPrefabs;
+    
     [SerializeField] TextMeshProUGUI waveUI;
+    [SerializeField] TextMeshProUGUI countdownUI;
 
     [Header("Wave Settings")]
-    [SerializeField] private int baseEnemies = 8;
-    [SerializeField] private float enemiesPerSecond = 0.5f;
-    [SerializeField] private float timeBetweenWaves = 5f;
-    [SerializeField] private float difficultyScalingFactor = 0.75f;
+    [SerializeField] private int baseEnemies;
+    [SerializeField] private float enemiesPerSecond;
+    [SerializeField] public float timeBetweenWaves;
+    [SerializeField] private float difficultyScalingFactor;
+    
+    // Singleton instance
+    public static WaveManager Instance { get; private set; }
 
     public static UnityEvent onEnemyDestroy = new UnityEvent();
 
     private int currentWave = 1;
+    private float nextWaveStartTime;
     private float timeSinceLastSpawn;
     private int enemiesAlive;
     private int enemiesLeftToSpawn;
     private bool isSpawning = false;
     private List<Vector2Int> currentPath;
+    
+    private Coroutine countdownCoroutine;
+    private float countdownTime;
 
     private void Awake()
     {
+        // Singleton setup
+        if (Instance == null)
+        {
+            Instance = this;
+        }
+        else
+        {
+            Destroy(gameObject);
+        }
+
         onEnemyDestroy.AddListener(EnemyDestroyed);
     }
 
@@ -66,16 +85,17 @@ public class WaveManager : MonoBehaviour
         isSpawning = false;
         timeSinceLastSpawn = 0f;
         currentWave++;
-        StartCoroutine(StartWave(timeBetweenWaves));
+        nextWaveStartTime = Time.time + timeBetweenWaves;
+        StartCountdown(timeBetweenWaves);
     }
-
+    
     private void Update()
     {
         if (GameManager.Instance.currentState == GameManager.GameState.GameOver)
         {
             return;
         }
-        
+    
         if (!isSpawning) return;
 
         timeSinceLastSpawn += Time.deltaTime;
@@ -141,9 +161,34 @@ public class WaveManager : MonoBehaviour
         return 0;
     }
 
-
     private int EnemiesPerWave()
     {
         return Mathf.RoundToInt(baseEnemies * Mathf.Pow(currentWave, difficultyScalingFactor));
     }
+    
+    public void StartCountdown(float countdownTime)
+    {
+        // Stop the previous countdown if there is one
+        if (countdownCoroutine != null)
+        {
+            StopCoroutine(countdownCoroutine);
+        }
+
+        this.countdownTime = countdownTime;
+        countdownCoroutine = StartCoroutine(CountdownCoroutine());
+        Debug.Log("Countdown started with time: " + countdownTime);
+    }
+
+    private IEnumerator CountdownCoroutine()
+    {
+        while (countdownTime > 0)
+        {
+            countdownUI.text = countdownTime.ToString("0");
+            yield return new WaitForSeconds(1f);
+            countdownTime--;
+        }
+        countdownUI.text = "0";
+        StartSpawningEnemies();
+    }
+
 }

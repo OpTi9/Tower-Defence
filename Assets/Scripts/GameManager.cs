@@ -9,6 +9,8 @@ public class GameManager : MonoBehaviour
     public int playerHealth;
     [SerializeField] TextMeshProUGUI healthUI;
     [SerializeField] TextMeshProUGUI highScoreUI;
+    [SerializeField] TextMeshProUGUI gameStateUI;
+    
     public TextMeshProUGUI highScoreList;
     
     [SerializeField] private GameObject enterNamePanel;
@@ -156,12 +158,13 @@ public class GameManager : MonoBehaviour
     private void Start()
     {
         PlaceStartAndEndCellPrefabs();
-        Invoke("StartWave", 5f);
+        WaveManager.Instance.StartCountdown(WaveManager.Instance.timeBetweenWaves);
     }
     
     public void ChangeState(GameState newState)
     {
         currentState = newState;
+        gameStateUI.text = newState.ToString();
     }
 
 
