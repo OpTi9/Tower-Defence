@@ -4319,7 +4319,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 0.5}
   m_AnchorMax: {x: 0, y: 0.5}
   m_AnchoredPosition: {x: 5, y: 0}
-  m_SizeDelta: {x: 60, y: 60}
+  m_SizeDelta: {x: 55, y: 55}
   m_Pivot: {x: 0, y: 0.5}
 --- !u!114 &1189849637
 MonoBehaviour:
@@ -7424,6 +7424,10 @@ PrefabInstance:
       propertyPath: enemiesLeftToSpawnUI
       value: 
       objectReference: {fileID: 2045893909}
+    - target: {fileID: 1789308879996984204, guid: b80ba13173892f54689e8e6263c5173c, type: 3}
+      propertyPath: enemiesPerSecondGrowth
+      value: 0.1
+      objectReference: {fileID: 0}
     - target: {fileID: 1789308879996984204, guid: b80ba13173892f54689e8e6263c5173c, type: 3}
       propertyPath: difficultyScalingFactor
       value: 0.8

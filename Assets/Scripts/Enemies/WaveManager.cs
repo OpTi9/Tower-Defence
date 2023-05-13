@@ -17,6 +17,7 @@ public class WaveManager : MonoBehaviour
     [Header("Wave Settings")]
     [SerializeField] private int baseEnemies;
     [SerializeField] private float enemiesPerSecond;
+    [SerializeField] private float enemiesPerSecondGrowth = 0.1f;
     [SerializeField] public float timeBetweenWaves;
     [SerializeField] private float difficultyScalingFactor;
     
@@ -49,44 +50,6 @@ public class WaveManager : MonoBehaviour
 
         onEnemyDestroy.AddListener(EnemyDestroyed);
     }
-
-    public void StartSpawningEnemies()
-    {
-        StartCoroutine(StartWave());
-    }
-    
-    private void OnGUI()
-    {
-        waveUI.text = currentWave.ToString();
-    }
-
-    private void EnemyDestroyed()
-    {
-        enemiesAlive--;
-    }
-    
-    private IEnumerator StartWave(float delay = 0f)
-    {
-        Debug.Log("wave started");
-        yield return new WaitForSeconds(delay);
-        GameManager.Instance.ChangeState(GameManager.GameState.Wave);
-
-        // Update the currentPath before starting a new wave
-        currentPath = GameManager.Instance.GetPath();
-
-        isSpawning = true;
-        enemiesLeftToSpawn = EnemiesPerWave();
-    }
-
-    private void EndWave()
-    {
-        Debug.Log("wave ended");
-        GameManager.Instance.ChangeState(GameManager.GameState.Building);
-        isSpawning = false;
-        timeSinceLastSpawn = 0f;
-        currentWave++;
-        StartCountdown(timeBetweenWaves);
-    }
     
     private void Update()
     {
@@ -113,6 +76,45 @@ public class WaveManager : MonoBehaviour
         {
             EndWave();
         }
+    }
+
+    public void StartSpawningEnemies()
+    {
+        StartCoroutine(StartWave());
+    }
+    
+    private void OnGUI()
+    {
+        waveUI.text = currentWave.ToString();
+    }
+
+    private void EnemyDestroyed()
+    {
+        enemiesAlive--;
+    }
+    
+    private IEnumerator StartWave(float delay = 0f)
+    {
+        Debug.Log("wave started");
+        yield return new WaitForSeconds(delay);
+        GameManager.Instance.ChangeState(GameManager.GameState.Wave);
+
+        // Update the currentPath before starting a new wave
+        currentPath = GameManager.Instance.GetPath();
+
+        isSpawning = true;
+        enemiesPerSecond *= (1 + (currentWave - 1) * enemiesPerSecondGrowth);
+        enemiesLeftToSpawn = EnemiesPerWave();
+    }
+
+    private void EndWave()
+    {
+        Debug.Log("wave ended");
+        GameManager.Instance.ChangeState(GameManager.GameState.Building);
+        isSpawning = false;
+        timeSinceLastSpawn = 0f;
+        currentWave++;
+        StartCountdown(timeBetweenWaves);
     }
 
     private void SpawnEnemy()

@@ -1,0 +1,1126 @@
+Using pre-set license
+Built from '2021.3/staging' branch; Version is '2021.3.11f1 (0a5ca18544bf) revision 679073'; Using compiler version '192829333'; Build Type 'Release'
+OS: 'Windows 10  (10.0.19045) 64bit Professional' Language: 'en' Physical Memory: 32718 MB
+BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 1
+
+COMMAND LINE ARGUMENTS:
+C:\Program Files\Unity\Hub\Editor\2021.3.11f1\Editor\Unity.exe
+-adb2
+-batchMode
+-noUpm
+-name
+AssetImportWorker2
+-projectPath
+C:/Users/Aza/Desktop/TD-CNAM/TD-CNAM
+-logFile
+Logs/AssetImportWorker2.log
+-srvPort
+58542
+Successfully changed project path to: C:/Users/Aza/Desktop/TD-CNAM/TD-CNAM
+C:/Users/Aza/Desktop/TD-CNAM/TD-CNAM
+[UnityMemory] Configuration Parameters - Can be set up in boot.config
+    "memorysetup-bucket-allocator-granularity=16"
+    "memorysetup-bucket-allocator-bucket-count=8"
+    "memorysetup-bucket-allocator-block-size=33554432"
+    "memorysetup-bucket-allocator-block-count=8"
+    "memorysetup-main-allocator-block-size=16777216"
+    "memorysetup-thread-allocator-block-size=16777216"
+    "memorysetup-gfx-main-allocator-block-size=16777216"
+    "memorysetup-gfx-thread-allocator-block-size=16777216"
+    "memorysetup-cache-allocator-block-size=4194304"
+    "memorysetup-typetree-allocator-block-size=2097152"
+    "memorysetup-profiler-bucket-allocator-granularity=16"
+    "memorysetup-profiler-bucket-allocator-bucket-count=8"
+    "memorysetup-profiler-bucket-allocator-block-size=33554432"
+    "memorysetup-profiler-bucket-allocator-block-count=8"
+    "memorysetup-profiler-allocator-block-size=16777216"
+    "memorysetup-profiler-editor-allocator-block-size=1048576"
+    "memorysetup-temp-allocator-size-main=16777216"
+    "memorysetup-job-temp-allocator-block-size=2097152"
+    "memorysetup-job-temp-allocator-block-size-background=1048576"
+    "memorysetup-job-temp-allocator-reduction-small-platforms=262144"
+    "memorysetup-temp-allocator-size-background-worker=32768"
+    "memorysetup-temp-allocator-size-job-worker=262144"
+    "memorysetup-temp-allocator-size-preload-manager=33554432"
+    "memorysetup-temp-allocator-size-nav-mesh-worker=65536"
+    "memorysetup-temp-allocator-size-audio-worker=65536"
+    "memorysetup-temp-allocator-size-cloud-worker=32768"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gfx=262144"
+Refreshing native plugins compatible for Editor in 128.52 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Initialize engine version: 2021.3.11f1 (0a5ca18544bf)
+[Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2021.3.11f1/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path C:/Users/Aza/Desktop/TD-CNAM/TD-CNAM/Assets
+GfxDevice: creating device client; threaded=0; jobified=0
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.1]
+    Renderer: NVIDIA GeForce RTX 3060 Ti (ID=0x2486)
+    Vendor:   NVIDIA
+    VRAM:     8038 MB
+    Driver:   31.0.15.3141
+Initialize mono
+Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2021.3.11f1/Editor/Data/Managed'
+Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2021.3.11f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
+Mono config path = 'C:/Program Files/Unity/Hub/Editor/2021.3.11f1/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56268
+Begin MonoManager ReloadAssembly
+Registering precompiled unity dll's ...
+Register platform support module: C:/Program Files/Unity/Hub/Editor/2021.3.11f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Registered in 0.007256 seconds.
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 132.52 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.685 seconds
+Domain Reload Profiling:
+	ReloadAssembly (685ms)
+		BeginReloadAssembly (68ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (0ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (1ms)
+		EndReloadAssembly (513ms)
+			LoadAssemblies (66ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (102ms)
+			ReleaseScriptCaches (0ms)
+			RebuildScriptCaches (30ms)
+			SetupLoadedEditorAssemblies (329ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (10ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (133ms)
+				BeforeProcessingInitializeOnLoad (1ms)
+				ProcessInitializeOnLoadAttributes (136ms)
+				ProcessInitializeOnLoadMethodAttributes (49ms)
+				AfterProcessingInitializeOnLoad (0ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (0ms)
+Platform modules already initialized, skipping
+Registering precompiled user dll's ...
+Registered in 0.009538 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image C:\Users\Aza\Desktop\TD-CNAM\TD-CNAM\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image C:\Users\Aza\Desktop\TD-CNAM\TD-CNAM\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 128.67 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.347 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1348ms)
+		BeginReloadAssembly (99ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (5ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (16ms)
+		EndReloadAssembly (1138ms)
+			LoadAssemblies (86ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (271ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (70ms)
+			SetupLoadedEditorAssemblies (631ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (5ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (129ms)
+				BeforeProcessingInitializeOnLoad (131ms)
+				ProcessInitializeOnLoadAttributes (298ms)
+				ProcessInitializeOnLoadMethodAttributes (54ms)
+				AfterProcessingInitializeOnLoad (13ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (8ms)
+Platform modules already initialized, skipping
+========================================================================
+Worker process is ready to serve import requests
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.07 seconds
+Refreshing native plugins compatible for Editor in 1.77 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 4109 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 44 unused Assets / (228.9 KB). Loaded Objects now: 4561.
+Memory consumption went from 154.9 MB to 154.7 MB.
+Total: 4.337300 ms (FindLiveObjects: 0.498700 ms CreateObjectMapping: 0.166400 ms MarkObjects: 3.426500 ms  DeleteObjects: 0.244700 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 23923.129860 seconds.
+  path: Assets/Sprites/assets/items_16x16/oryx_16bit_fantasy_items_263.png
+  artifactKey: Guid(5eb9669eaac4a1e438ccc5d736c17d68) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/assets/items_16x16/oryx_16bit_fantasy_items_263.png using Guid(5eb9669eaac4a1e438ccc5d736c17d68) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1d9d7bf2a25071ff6980980f3f2b5379') in 0.148059 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/Sprites/assets/world_24x24/oryx_16bit_fantasy_world_583.png
+  artifactKey: Guid(e532b31fcd70aad43bd01a7415119b5c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/assets/world_24x24/oryx_16bit_fantasy_world_583.png using Guid(e532b31fcd70aad43bd01a7415119b5c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4b228a93821abc308dd7a984a9bc30c8') in 0.024728 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/Sprites/assets/fx_32x32/oryx_16bit_fantasy_fx_11.png
+  artifactKey: Guid(ef5229599fbe7ad43add82c29b6d0691) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/assets/fx_32x32/oryx_16bit_fantasy_fx_11.png using Guid(ef5229599fbe7ad43add82c29b6d0691) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cbd92abf673a042b28170326a0814d56') in 0.041793 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000024 seconds.
+  path: Packages/com.unity.2d.animation/Editor/Assets/SkinningModule/Icons/Dark/d_Bone@2x.png
+  artifactKey: Guid(17d971605cfbaea47b0d10b0b5dbc406) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.unity.2d.animation/Editor/Assets/SkinningModule/Icons/Dark/d_Bone@2x.png using Guid(17d971605cfbaea47b0d10b0b5dbc406) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1d99db04a613996b13607a88e6375a44') in 0.023054 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000028 seconds.
+  path: Assets/Sprites/assets/world_24x24/oryx_16bit_fantasy_world_545.png
+  artifactKey: Guid(3036a8873932d794b90ddd5aea9c0bbb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/assets/world_24x24/oryx_16bit_fantasy_world_545.png using Guid(3036a8873932d794b90ddd5aea9c0bbb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'deaa0cd1f42d73c9350e1629511b6747') in 0.023191 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/Sprites/assets/world_24x24/oryx_16bit_fantasy_world_564.png
+  artifactKey: Guid(162c70a6f74a0ee4aa3fee7abdee2dd1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/assets/world_24x24/oryx_16bit_fantasy_world_564.png using Guid(162c70a6f74a0ee4aa3fee7abdee2dd1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6a9445184c37592a687e7ea4cfefe19e') in 0.020980 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/Sprites/assets/world_24x24/oryx_16bit_fantasy_world_566.png
+  artifactKey: Guid(4853ed265b0d61e45b89d38c8ff270cf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/assets/world_24x24/oryx_16bit_fantasy_world_566.png using Guid(4853ed265b0d61e45b89d38c8ff270cf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4e05bc2d1c661bd306e1afc4d4d11187') in 0.024976 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/Sprites/assets/world_24x24/oryx_16bit_fantasy_world_541.png
+  artifactKey: Guid(607ca1083f9fee34babcf41fccac2051) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/assets/world_24x24/oryx_16bit_fantasy_world_541.png using Guid(607ca1083f9fee34babcf41fccac2051) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cb35999a361f19af372c95ca819d2515') in 0.023001 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/Sprites/assets/world_24x24/oryx_16bit_fantasy_world_603.png
+  artifactKey: Guid(dd8315f2e0bc3824fbfeb72cdcf197ff) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/assets/world_24x24/oryx_16bit_fantasy_world_603.png using Guid(dd8315f2e0bc3824fbfeb72cdcf197ff) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e338840babd05e3c078627f742a27ea4') in 0.024778 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Packages/com.unity.2d.animation/Editor/Assets/SkinningModule/Icons/Dark/d_Bone.png
+  artifactKey: Guid(fc2eaf4b0441b7645960252182c27446) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.unity.2d.animation/Editor/Assets/SkinningModule/Icons/Dark/d_Bone.png using Guid(fc2eaf4b0441b7645960252182c27446) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '30ea2e63a43547f0c32a7e140a91ac7f') in 0.020677 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/Sprites/assets/fx_24x24/oryx_16bit_fantasy_fx2_191.png
+  artifactKey: Guid(0a1815c7775117b46a5cb1a06f36d423) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/assets/fx_24x24/oryx_16bit_fantasy_fx2_191.png using Guid(0a1815c7775117b46a5cb1a06f36d423) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '15a26cdc04543957b0c551a99a277986') in 0.024922 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000027 seconds.
+  path: Assets/Sprites/assets/world_24x24/oryx_16bit_fantasy_world_615.png
+  artifactKey: Guid(c3263eaa50608e84e82f4f994ec29658) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/assets/world_24x24/oryx_16bit_fantasy_world_615.png using Guid(c3263eaa50608e84e82f4f994ec29658) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fce9866687ce93d89fd06ad351074913') in 0.023551 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000036 seconds.
+  path: Packages/com.unity.2d.animation/Editor/Assets/SkinningModule/Icons/Dark/d_Copy@3x.png
+  artifactKey: Guid(3b5ad4dfc78124a489bb5c48a4b57195) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.unity.2d.animation/Editor/Assets/SkinningModule/Icons/Dark/d_Copy@3x.png using Guid(3b5ad4dfc78124a489bb5c48a4b57195) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '622cbd63aa42e23e5961c2e602837881') in 0.027154 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000028 seconds.
+  path: Assets/Sprites/assets/world_24x24/oryx_16bit_fantasy_world_617.png
+  artifactKey: Guid(4b77ef3f1af86ee4195aef3ff5087917) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/assets/world_24x24/oryx_16bit_fantasy_world_617.png using Guid(4b77ef3f1af86ee4195aef3ff5087917) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4a23c0abba04a47b1ee66ebbd0fc6917') in 0.024741 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000029 seconds.
+  path: Assets/Sprites/assets/world_24x24/oryx_16bit_fantasy_world_939.png
+  artifactKey: Guid(2b18ebadf4f5c0e43a9810e6b7a9ecdf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/assets/world_24x24/oryx_16bit_fantasy_world_939.png using Guid(2b18ebadf4f5c0e43a9810e6b7a9ecdf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5fa93e2cd2ccd93817ab4340b79fccee') in 0.031669 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/Sprites/assets/world_24x24/oryx_16bit_fantasy_world_929.png
+  artifactKey: Guid(10ffdc5c41fc0334ca87272bf9feafe2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/assets/world_24x24/oryx_16bit_fantasy_world_929.png using Guid(10ffdc5c41fc0334ca87272bf9feafe2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'abbaf1c056f498d1dd2b5665633b2206') in 0.027345 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/Sprites/assets/world_24x24/oryx_16bit_fantasy_world_608.png
+  artifactKey: Guid(b79dbd3f15af1f8459ef7ae394744db6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/assets/world_24x24/oryx_16bit_fantasy_world_608.png using Guid(b79dbd3f15af1f8459ef7ae394744db6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '148c6c43f4cab60c027e66a6787907e5') in 0.025850 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000029 seconds.
+  path: Assets/Sprites/assets/world_24x24/oryx_16bit_fantasy_world_620.png
+  artifactKey: Guid(2445aa0d8ddaaf94c870624b018ecb57) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/assets/world_24x24/oryx_16bit_fantasy_world_620.png using Guid(2445aa0d8ddaaf94c870624b018ecb57) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7bd13520175be7e074df848454970c98') in 0.024502 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/Sprites/assets/world_24x24/oryx_16bit_fantasy_world_926.png
+  artifactKey: Guid(9f39481cb07a9874fbf217a800fe3eb5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/assets/world_24x24/oryx_16bit_fantasy_world_926.png using Guid(9f39481cb07a9874fbf217a800fe3eb5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '396154f91db32067adcca7ff860ed4b4') in 0.025240 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000028 seconds.
+  path: Assets/Sprites/assets/world_24x24/oryx_16bit_fantasy_world_586.png
+  artifactKey: Guid(affc02e7f229159469f8b103c0d7bccd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/assets/world_24x24/oryx_16bit_fantasy_world_586.png using Guid(affc02e7f229159469f8b103c0d7bccd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b757dc2d40abcea759c1d88d912158cc') in 0.022585 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/Sprites/assets/world_24x24/oryx_16bit_fantasy_world_949.png
+  artifactKey: Guid(310bc95f35c035b47918212a74bb2e5d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/assets/world_24x24/oryx_16bit_fantasy_world_949.png using Guid(310bc95f35c035b47918212a74bb2e5d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '31c41ee1ea873db2092d4e2437079b29') in 0.022673 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/Sprites/assets/world_24x24/oryx_16bit_fantasy_world_577.png
+  artifactKey: Guid(60835c93914e0d442b42be22fe910867) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/assets/world_24x24/oryx_16bit_fantasy_world_577.png using Guid(60835c93914e0d442b42be22fe910867) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '54c25163d0ed036b6e7bdbb77dffd542') in 0.023415 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/Sprites/assets/world_24x24/oryx_16bit_fantasy_world_576.png
+  artifactKey: Guid(dea1508842a6f494a88946435fbbf447) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/assets/world_24x24/oryx_16bit_fantasy_world_576.png using Guid(dea1508842a6f494a88946435fbbf447) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '98549c5e53b4a7d47607a2c7e104406d') in 0.025770 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Packages/com.unity.2d.animation/Editor/Assets/SkinningModule/Icons/Dark/d_Create Bones.png
+  artifactKey: Guid(b4b58192a0265df4980d56bf9054df08) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.unity.2d.animation/Editor/Assets/SkinningModule/Icons/Dark/d_Create Bones.png using Guid(b4b58192a0265df4980d56bf9054df08) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bb700b495dc328b80a3901455b425a19') in 0.024072 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Packages/com.unity.collab-proxy/Editor/PlasticSCM/Assets/Images/d_colorbuhochristmas.png
+  artifactKey: Guid(fd098fb4cf57bad419701c802e442b7e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.unity.collab-proxy/Editor/PlasticSCM/Assets/Images/d_colorbuhochristmas.png using Guid(fd098fb4cf57bad419701c802e442b7e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2da47d70052d43fd941e2f1b2c2156c6') in 0.034240 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000014 seconds.
+  path: Assets/Sprites/assets/items_16x16/oryx_16bit_fantasy_items_258.png
+  artifactKey: Guid(9219dc098efe139439cd90e2685447c2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/assets/items_16x16/oryx_16bit_fantasy_items_258.png using Guid(9219dc098efe139439cd90e2685447c2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a6b4be5786f7f43e7aa741ce2720cdaa') in 0.023687 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/Sprites/assets/items_16x16/oryx_16bit_fantasy_items_277.png
+  artifactKey: Guid(943c126ad0409a6428d31fba6c2cf9ad) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/assets/items_16x16/oryx_16bit_fantasy_items_277.png using Guid(943c126ad0409a6428d31fba6c2cf9ad) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cfea0fe1d394d86d6eee58ab22e206fd') in 0.031666 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000031 seconds.
+  path: Assets/Sprites/assets/items_16x16/oryx_16bit_fantasy_items_265.png
+  artifactKey: Guid(f377bc5c4b54cd54bb5cbd4fd5a06a2c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/assets/items_16x16/oryx_16bit_fantasy_items_265.png using Guid(f377bc5c4b54cd54bb5cbd4fd5a06a2c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1fee27dc30421a7e508208e2017d777a') in 0.032390 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Packages/com.unity.2d.animation/Editor/Assets/SkinningModule/Icons/Dark/d_Create_Vertex@4x.png
+  artifactKey: Guid(2ced226d9df062547882002f633ab6ee) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.unity.2d.animation/Editor/Assets/SkinningModule/Icons/Dark/d_Create_Vertex@4x.png using Guid(2ced226d9df062547882002f633ab6ee) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '03a38052e088fe8cb20d49f302609538') in 0.023420 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Packages/com.unity.collab-proxy/Editor/PlasticSCM/Assets/Images/d_iconlockedlocaloverlay.png
+  artifactKey: Guid(71c45f80bffdb9145ad2c456254c862e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.unity.collab-proxy/Editor/PlasticSCM/Assets/Images/d_iconlockedlocaloverlay.png using Guid(71c45f80bffdb9145ad2c456254c862e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ddadb1cf0dc0f27791ab46f80fce0cff') in 0.023767 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Packages/com.unity.collab-proxy/Editor/PlasticSCM/Assets/Images/d_buttonssosigninemail@2x.png
+  artifactKey: Guid(144aa74618b85974a9a50f612c2fa8fd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.unity.collab-proxy/Editor/PlasticSCM/Assets/Images/d_buttonssosigninemail@2x.png using Guid(144aa74618b85974a9a50f612c2fa8fd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '083c6ba0de31e57d72c986bd79fd12b7') in 0.021520 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/Sprites/assets/world_24x24/oryx_16bit_fantasy_world_607.png
+  artifactKey: Guid(c56e6099bb5d47b4784c705f7c9e9fe7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/assets/world_24x24/oryx_16bit_fantasy_world_607.png using Guid(c56e6099bb5d47b4784c705f7c9e9fe7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '60e88e02c71c81dc5300d17699494984') in 0.023584 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Packages/com.unity.2d.animation/Editor/Assets/SkinningModule/Icons/Dark/d_Copy.png
+  artifactKey: Guid(69fdfe6d8e206134a83223383472ff48) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.unity.2d.animation/Editor/Assets/SkinningModule/Icons/Dark/d_Copy.png using Guid(69fdfe6d8e206134a83223383472ff48) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '72534b401c2f6f4b0c920bf305bc4b34') in 0.024862 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000040 seconds.
+  path: Packages/com.unity.collab-proxy/Editor/PlasticSCM/Assets/Images/d_iconlockedremoteoverlay.png
+  artifactKey: Guid(1046ed65e6aaffb4391378f6d08d6c14) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.unity.collab-proxy/Editor/PlasticSCM/Assets/Images/d_iconlockedremoteoverlay.png using Guid(1046ed65e6aaffb4391378f6d08d6c14) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '35c77bf1af1bc2e852ae34d76ce75abf') in 0.022240 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000028 seconds.
+  path: Assets/Sprites/assets/world_24x24/oryx_16bit_fantasy_world_948.png
+  artifactKey: Guid(4c8fe6791303eed4d960692dfd430d08) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/assets/world_24x24/oryx_16bit_fantasy_world_948.png using Guid(4c8fe6791303eed4d960692dfd430d08) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a1646e63721264e7a334dd74abf060f6') in 0.021360 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000028 seconds.
+  path: Assets/Sprites/assets/world_24x24/oryx_16bit_fantasy_world_572.png
+  artifactKey: Guid(2d5c61225997c604496f57d2770baa0a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/assets/world_24x24/oryx_16bit_fantasy_world_572.png using Guid(2d5c61225997c604496f57d2770baa0a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b6b05b758dc6ba6c59076ce68605b16b') in 0.022844 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/Sprites/assets/fx_24x24/oryx_16bit_fantasy_fx2_200.png
+  artifactKey: Guid(7fa8d77a5321acb4ba71299c4b6d0d22) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/assets/fx_24x24/oryx_16bit_fantasy_fx2_200.png using Guid(7fa8d77a5321acb4ba71299c4b6d0d22) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd6f1e4d33cfcf90d9e37840cb3bffe53') in 0.021843 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/Sprites/assets/world_24x24/oryx_16bit_fantasy_world_942.png
+  artifactKey: Guid(5b959f7f8e0666a46869d7217e6406d2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/assets/world_24x24/oryx_16bit_fantasy_world_942.png using Guid(5b959f7f8e0666a46869d7217e6406d2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2aa161d1396b5762723df1f2b0a81716') in 0.022580 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 2.318890 seconds.
+  path: Assets/Sprites/assets/world_24x24/oryx_16bit_fantasy_world_1129.png
+  artifactKey: Guid(0a4c352b2a6ea9d4f994fff5f26cde41) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/assets/world_24x24/oryx_16bit_fantasy_world_1129.png using Guid(0a4c352b2a6ea9d4f994fff5f26cde41) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c602c035a4551d60c14fc5447bc83713') in 0.021431 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1.001756 seconds.
+  path: Assets/Sprites/assets/world_24x24/oryx_16bit_fantasy_world_1304.png
+  artifactKey: Guid(026b918f20f41cf48b542c82d3e9fb81) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/assets/world_24x24/oryx_16bit_fantasy_world_1304.png using Guid(026b918f20f41cf48b542c82d3e9fb81) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '550d53da0a8f11421d5a28ec0d70f9fa') in 0.024729 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/Sprites/assets/world_24x24/oryx_16bit_fantasy_world_1317.png
+  artifactKey: Guid(db9bfcd69f567de469c02fa5d5d6b35d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/assets/world_24x24/oryx_16bit_fantasy_world_1317.png using Guid(db9bfcd69f567de469c02fa5d5d6b35d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e7618cf0960a8d3a21f750016322fde4') in 0.026976 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000030 seconds.
+  path: Assets/Sprites/assets/world_24x24/oryx_16bit_fantasy_world_1343.png
+  artifactKey: Guid(62cf94cbd2e40ae4fa04e6d1a30abb3b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/assets/world_24x24/oryx_16bit_fantasy_world_1343.png using Guid(62cf94cbd2e40ae4fa04e6d1a30abb3b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1f8d43322f56b4a12366dd6f69a07649') in 0.027541 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000027 seconds.
+  path: Assets/Sprites/assets/world_24x24/oryx_16bit_fantasy_world_1327.png
+  artifactKey: Guid(4686803a0ea999a409b1dfad7b88b12f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/assets/world_24x24/oryx_16bit_fantasy_world_1327.png using Guid(4686803a0ea999a409b1dfad7b88b12f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '16bf198937a46a60c36aac3907294454') in 0.032496 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/Sprites/assets/world_24x24/oryx_16bit_fantasy_world_1316.png
+  artifactKey: Guid(670cd562248d2354283c1c13d13dd2b7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/assets/world_24x24/oryx_16bit_fantasy_world_1316.png using Guid(670cd562248d2354283c1c13d13dd2b7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f9676194eefb4b2a3039a7145e7aabf8') in 0.028883 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/Sprites/assets/world_24x24/oryx_16bit_fantasy_world_1355.png
+  artifactKey: Guid(2fa27f354c22b6a4da71638cc9724ff1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/assets/world_24x24/oryx_16bit_fantasy_world_1355.png using Guid(2fa27f354c22b6a4da71638cc9724ff1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '06358f1bbf745ccd9cd30c72cc00f437') in 0.027886 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/Sprites/assets/world_24x24/oryx_16bit_fantasy_world_1345.png
+  artifactKey: Guid(c052274e9d2999e40862aec7a1eebc9e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/assets/world_24x24/oryx_16bit_fantasy_world_1345.png using Guid(c052274e9d2999e40862aec7a1eebc9e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '04583630d442c8a48f9aadbcd1b5f11d') in 0.023558 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/Sprites/assets/world_24x24/oryx_16bit_fantasy_world_1336.png
+  artifactKey: Guid(dc5a09f67292f31488c0fdbfbf723377) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/assets/world_24x24/oryx_16bit_fantasy_world_1336.png using Guid(dc5a09f67292f31488c0fdbfbf723377) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fb54d53e5100ad72ca47e1441c3f3a62') in 0.024276 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Packages/com.unity.timeline/Editor/StyleSheets/Images/LightSkin/TimelineAutokey_active@2x.png
+  artifactKey: Guid(f6717d61970edba4686c297677881a77) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.unity.timeline/Editor/StyleSheets/Images/LightSkin/TimelineAutokey_active@2x.png using Guid(f6717d61970edba4686c297677881a77) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f66abdb6264e48d5e0d854495bf4e2cf') in 0.020791 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Packages/com.unity.timeline/Editor/StyleSheets/Images/Shared/TimelineBottomShadow.png
+  artifactKey: Guid(db66ea47c76423f4a881937d34495801) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.unity.timeline/Editor/StyleSheets/Images/Shared/TimelineBottomShadow.png using Guid(db66ea47c76423f4a881937d34495801) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a98d58308d72e4fe51aba9bdaab4a8d8') in 0.022607 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000041 seconds.
+  path: Packages/com.unity.timeline/Editor/StyleSheets/Images/Shared/TimelineGroupBackground.png
+  artifactKey: Guid(6ca5daa3415451940921fa7e2c3db9e8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.unity.timeline/Editor/StyleSheets/Images/Shared/TimelineGroupBackground.png using Guid(6ca5daa3415451940921fa7e2c3db9e8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ee8b5fdd3f4752401eaf7666ffbc1156') in 0.023476 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Packages/com.unity.timeline/Editor/StyleSheets/Images/Icons/TimelineEditModeReplaceOFF.png
+  artifactKey: Guid(09ae14686a02d484ab41e76fd1efba14) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.unity.timeline/Editor/StyleSheets/Images/Icons/TimelineEditModeReplaceOFF.png using Guid(09ae14686a02d484ab41e76fd1efba14) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '47bfdc7d4e5f93715f5e728843fb0ce6') in 0.020408 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Packages/com.unity.timeline/Editor/StyleSheets/Images/DarkSkin/TimelineHold.png
+  artifactKey: Guid(ddbd45249a133a846b2f20e39b537565) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.unity.timeline/Editor/StyleSheets/Images/DarkSkin/TimelineHold.png using Guid(ddbd45249a133a846b2f20e39b537565) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b3135c404ec0256dcb12f8440fbff055') in 0.020810 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000024 seconds.
+  path: Packages/com.unity.timeline/Editor/StyleSheets/Images/DarkSkin/TimelineAutokey_active@2x.png
+  artifactKey: Guid(183f7b7549219ab47becb461a16df882) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.unity.timeline/Editor/StyleSheets/Images/DarkSkin/TimelineAutokey_active@2x.png using Guid(183f7b7549219ab47becb461a16df882) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd39f228b0a22a4be249b1b437a97d98e') in 0.018748 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000024 seconds.
+  path: Assets/Sprites/assets/world_24x24/oryx_16bit_fantasy_world_1352.png
+  artifactKey: Guid(ed928bac83f924245b0c4eeef2455f26) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/assets/world_24x24/oryx_16bit_fantasy_world_1352.png using Guid(ed928bac83f924245b0c4eeef2455f26) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1149c19a93037b324629517ca5f82604') in 0.023152 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/Sprites/assets/world_24x24/oryx_16bit_fantasy_world_1315.png
+  artifactKey: Guid(99c8b51bd6267d746a8be7c62a411c2c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/assets/world_24x24/oryx_16bit_fantasy_world_1315.png using Guid(99c8b51bd6267d746a8be7c62a411c2c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'baaba587218b87650d4dd2e5b5a514fb') in 0.023276 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000026 seconds.
+  path: Assets/Sprites/assets/world_24x24/oryx_16bit_fantasy_world_1342.png
+  artifactKey: Guid(990589312aa9b3d48b947d5b6e6aec20) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/assets/world_24x24/oryx_16bit_fantasy_world_1342.png using Guid(990589312aa9b3d48b947d5b6e6aec20) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '374cc8eba1e86491f0297c2ac0d802e0') in 0.020866 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000024 seconds.
+  path: Assets/Sprites/assets/world_24x24/oryx_16bit_fantasy_world_1351.png
+  artifactKey: Guid(e1fd410369ae9eb40b9155e802ce3311) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/assets/world_24x24/oryx_16bit_fantasy_world_1351.png using Guid(e1fd410369ae9eb40b9155e802ce3311) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '13dd487bcad4ed4df44dfe8b9d162c8b') in 0.022725 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000026 seconds.
+  path: Packages/com.unity.timeline/Editor/StyleSheets/Images/LightSkin/TimelineIconClipOut.png
+  artifactKey: Guid(a7a968b204ed77c4ba90be3ef3ee8551) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.unity.timeline/Editor/StyleSheets/Images/LightSkin/TimelineIconClipOut.png using Guid(a7a968b204ed77c4ba90be3ef3ee8551) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5e7561802ab89d98899503094e99a761') in 0.019034 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000029 seconds.
+  path: Packages/com.unity.timeline/Editor/StyleSheets/Images/DarkSkin/TimelineEndPlayback.png
+  artifactKey: Guid(c285802d9d414814fad592b90b223f15) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.unity.timeline/Editor/StyleSheets/Images/DarkSkin/TimelineEndPlayback.png using Guid(c285802d9d414814fad592b90b223f15) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9b16b81318cd2697f685bdf2bb67d782') in 0.018833 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/Sprites/assets/world_24x24/oryx_16bit_fantasy_world_1347.png
+  artifactKey: Guid(63129af186ace6446be3d31d448298ba) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/assets/world_24x24/oryx_16bit_fantasy_world_1347.png using Guid(63129af186ace6446be3d31d448298ba) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e391b170066ccbb08435ba45d1cbf7b7') in 0.025685 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000024 seconds.
+  path: Assets/Sprites/assets/world_24x24/oryx_16bit_fantasy_world_1338.png
+  artifactKey: Guid(4c5d91c010be15c4f89696b254cbeb71) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/assets/world_24x24/oryx_16bit_fantasy_world_1338.png using Guid(4c5d91c010be15c4f89696b254cbeb71) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4236e15c456acc74d515c6cfdfb9f98b') in 0.022137 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Packages/com.unity.timeline/Editor/StyleSheets/Images/LightSkin/TimelineDisabledBackground.png
+  artifactKey: Guid(0304baf8d224f3e47b22d872c8dcd412) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.unity.timeline/Editor/StyleSheets/Images/LightSkin/TimelineDisabledBackground.png using Guid(0304baf8d224f3e47b22d872c8dcd412) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cfb38a5ab4212109efa46bbfe41f9256') in 0.019891 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/Sprites/assets/world_24x24/oryx_16bit_fantasy_world_1349.png
+  artifactKey: Guid(8711748156cbad44a9f369068c2e7209) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/assets/world_24x24/oryx_16bit_fantasy_world_1349.png using Guid(8711748156cbad44a9f369068c2e7209) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '77062dba56453f331f1b500dcea52821') in 0.022554 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/Sprites/assets/world_24x24/oryx_16bit_fantasy_world_1337.png
+  artifactKey: Guid(ef3f942d71e67ed42a7067fdb2137270) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/assets/world_24x24/oryx_16bit_fantasy_world_1337.png using Guid(ef3f942d71e67ed42a7067fdb2137270) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd1bce301baefba0760313e0e70639ea8') in 0.022491 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Packages/com.unity.timeline/Editor/StyleSheets/Images/Icons/TimelineEditModeMixOFF.png
+  artifactKey: Guid(8fca5ed160cdc5440a4c7561db4082b2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.unity.timeline/Editor/StyleSheets/Images/Icons/TimelineEditModeMixOFF.png using Guid(8fca5ed160cdc5440a4c7561db4082b2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8d5c1af56c994ee192a987f181a56bb0') in 0.017628 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Packages/com.unity.timeline/Editor/StyleSheets/Images/Icons/TimelineEditModeMixON.png
+  artifactKey: Guid(a82846d41464fcf4b962ebdc815963f5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.unity.timeline/Editor/StyleSheets/Images/Icons/TimelineEditModeMixON.png using Guid(a82846d41464fcf4b962ebdc815963f5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '02fc42aad0b99b7ed62d0f371908bffd') in 0.019561 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.365202 seconds.
+  path: Packages/com.unity.2d.animation/Editor/Assets/SkinningModule/Icons/Light/Visibility_Tool@4x.png
+  artifactKey: Guid(216c53aef79eaaf40a1800cc5e542dc3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.unity.2d.animation/Editor/Assets/SkinningModule/Icons/Light/Visibility_Tool@4x.png using Guid(216c53aef79eaaf40a1800cc5e542dc3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e8aa4ff5f5e53550239b749d7dda5e36') in 0.044804 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Packages/com.unity.timeline/Editor/StyleSheets/Images/LightSkin/TimelineMarkerItemSelected.png
+  artifactKey: Guid(b6e9dc9aad5843748a0124b8925c3743) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.unity.timeline/Editor/StyleSheets/Images/LightSkin/TimelineMarkerItemSelected.png using Guid(b6e9dc9aad5843748a0124b8925c3743) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '76288c5dcd8b8a8d4040dcedbfeb409c') in 0.021524 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000040 seconds.
+  path: Packages/com.unity.2d.animation/Editor/Assets/SkinningModule/Icons/Light/Weight_Brush@3x.png
+  artifactKey: Guid(3279d541bf75c624cbdd7179eb5559a8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.unity.2d.animation/Editor/Assets/SkinningModule/Icons/Light/Weight_Brush@3x.png using Guid(3279d541bf75c624cbdd7179eb5559a8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f39847d1a65c619865e018e91eb0ee78') in 0.027782 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Packages/com.unity.2d.animation/Editor/Assets/SkinningModule/Icons/Selected/Weight_Brush@4x.png
+  artifactKey: Guid(48464cd53bb3c604f999e7d3f15e8d09) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.unity.2d.animation/Editor/Assets/SkinningModule/Icons/Selected/Weight_Brush@4x.png using Guid(48464cd53bb3c604f999e7d3f15e8d09) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fa4a849b8dffd328a602c7ebf15c33da') in 0.024720 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Packages/com.unity.2d.animation/Editor/Assets/SkinningModule/Icons/Selected/Parent_Bone@2x.png
+  artifactKey: Guid(698621c9178225f4b8fbaffd383d579e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.unity.2d.animation/Editor/Assets/SkinningModule/Icons/Selected/Parent_Bone@2x.png using Guid(698621c9178225f4b8fbaffd383d579e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ec219cd2bd920d16ab36d032ea165002') in 0.026050 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Packages/com.unity.timeline/Editor/StyleSheets/Images/LightSkin/TimelinePingPong.png
+  artifactKey: Guid(88d697f38121de443ba144702e5122d9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.unity.timeline/Editor/StyleSheets/Images/LightSkin/TimelinePingPong.png using Guid(88d697f38121de443ba144702e5122d9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'afb7a10b54fba01d437040dc597fa90c') in 0.021147 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Packages/com.unity.2d.animation/Editor/Assets/SkinningModule/Icons/Light/Parent_Bone.png
+  artifactKey: Guid(2972f301b2bf3dd46989677197b9a34d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.unity.2d.animation/Editor/Assets/SkinningModule/Icons/Light/Parent_Bone.png using Guid(2972f301b2bf3dd46989677197b9a34d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9516e9f7a9333caf9aaa585e3cdbfa04') in 0.024125 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Packages/com.unity.2d.animation/Editor/Assets/SkinningModule/Icons/Light/Paste@4x.png
+  artifactKey: Guid(f53eca637c0194e4ab6729cf60753757) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.unity.2d.animation/Editor/Assets/SkinningModule/Icons/Light/Paste@4x.png using Guid(f53eca637c0194e4ab6729cf60753757) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9d1557aa69678cf528c5c7ace68d00fc') in 0.021542 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Packages/com.unity.2d.animation/Editor/Assets/SkinningModule/Icons/Light/Paste.png
+  artifactKey: Guid(94cc0d3ec6363a94c8802f10ef239744) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.unity.2d.animation/Editor/Assets/SkinningModule/Icons/Light/Paste.png using Guid(94cc0d3ec6363a94c8802f10ef239744) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5ef1ed001b2e38d17fdc3c430d799311') in 0.025685 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Packages/com.unity.2d.animation/Editor/Assets/SkinningModule/Icons/Selected/Parent_Bone.png
+  artifactKey: Guid(1b8ac2bef8a060f4ca19b22a3720cb0e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.unity.2d.animation/Editor/Assets/SkinningModule/Icons/Selected/Parent_Bone.png using Guid(1b8ac2bef8a060f4ca19b22a3720cb0e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6bb29c0f936e94496d8bfb45227f3127') in 0.022135 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Packages/com.unity.2d.animation/Editor/Assets/SkinningModule/Icons/Light/Weight_Slider@2x.png
+  artifactKey: Guid(6306a4776b130304bba7a139fc1d2bb8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.unity.2d.animation/Editor/Assets/SkinningModule/Icons/Light/Weight_Slider@2x.png using Guid(6306a4776b130304bba7a139fc1d2bb8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5d29ccc5cad25342e6f22b4c2197ef57') in 0.024448 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Packages/com.unity.timeline/Editor/StyleSheets/Images/DarkSkin/TimelineMarkerItemCollapsed.png
+  artifactKey: Guid(f179d9a3cccffb04ba2e27f681e9b147) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.unity.timeline/Editor/StyleSheets/Images/DarkSkin/TimelineMarkerItemCollapsed.png using Guid(f179d9a3cccffb04ba2e27f681e9b147) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '278b04955f2958d0170eae7b5b70ab48') in 0.017735 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Packages/com.unity.2d.animation/Editor/Assets/SkinningModule/Icons/Selected/Weight_Slider@2x.png
+  artifactKey: Guid(7f64a6e091143c0458506b559165cf72) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.unity.2d.animation/Editor/Assets/SkinningModule/Icons/Selected/Weight_Slider@2x.png using Guid(7f64a6e091143c0458506b559165cf72) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'abacfa27bcd7b217dc44b48b207fc746') in 0.023455 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000026 seconds.
+  path: Packages/com.unity.2d.animation/Editor/Assets/SkinningModule/Icons/Light/Parent_Bone@2x.png
+  artifactKey: Guid(fc9e5a25e0610a347b46fd10daa3f0cd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.unity.2d.animation/Editor/Assets/SkinningModule/Icons/Light/Parent_Bone@2x.png using Guid(fc9e5a25e0610a347b46fd10daa3f0cd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1fa26cb3006bf0599a598b865cd0ea25') in 0.023612 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Packages/com.unity.timeline/Editor/StyleSheets/Images/DarkSkin/TimelinePlayRange.png
+  artifactKey: Guid(43eeff8a446b32242a4fb1a5c1bd7b8e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.unity.timeline/Editor/StyleSheets/Images/DarkSkin/TimelinePlayRange.png using Guid(43eeff8a446b32242a4fb1a5c1bd7b8e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '45ee1bbc2d2886510aa1a20b43fbee0b') in 0.021275 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.260226 seconds.
+  path: Assets/Sprites/assets/world_24x24/oryx_16bit_fantasy_world_1117.png
+  artifactKey: Guid(291f3b36e78f56d4e8258e619e984c58) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/assets/world_24x24/oryx_16bit_fantasy_world_1117.png using Guid(291f3b36e78f56d4e8258e619e984c58) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c7b54cf852dbed81528fac2064397cbe') in 0.023553 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/Sprites/assets/world_24x24/oryx_16bit_fantasy_world_1105.png
+  artifactKey: Guid(e14674ec64e33754a966d2c7cbbab064) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/assets/world_24x24/oryx_16bit_fantasy_world_1105.png using Guid(e14674ec64e33754a966d2c7cbbab064) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '24eda964912585564577ddac45d85694') in 0.024460 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000026 seconds.
+  path: Assets/Sprites/assets/world_24x24/oryx_16bit_fantasy_world_1108.png
+  artifactKey: Guid(7ff423e27b6e88f4ea6f3a7c868ac8fd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/assets/world_24x24/oryx_16bit_fantasy_world_1108.png using Guid(7ff423e27b6e88f4ea6f3a7c868ac8fd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd6bd2518491f94efee8cff06f425bbf3') in 0.022278 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000035 seconds.
+  path: Assets/Sprites/assets/world_24x24/oryx_16bit_fantasy_world_1125.png
+  artifactKey: Guid(2429e69c870d3da4c9cffdccfd236762) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/assets/world_24x24/oryx_16bit_fantasy_world_1125.png using Guid(2429e69c870d3da4c9cffdccfd236762) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a5b1e68635e4d5750e89d7e89034c1c7') in 0.024091 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/Sprites/assets/world_24x24/oryx_16bit_fantasy_world_1013.png
+  artifactKey: Guid(3e389fba6cf420d4ea160d76ef741e78) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/assets/world_24x24/oryx_16bit_fantasy_world_1013.png using Guid(3e389fba6cf420d4ea160d76ef741e78) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f75d2ad62ffcdb7559b984c39d979a63') in 0.023925 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/Sprites/assets/world_24x24/oryx_16bit_fantasy_world_1101.png
+  artifactKey: Guid(30847c47bef637a49925e85484e62824) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/assets/world_24x24/oryx_16bit_fantasy_world_1101.png using Guid(30847c47bef637a49925e85484e62824) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '105d60fde46c1b7c47d99669c65b9c3f') in 0.023751 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000036 seconds.
+  path: Assets/Sprites/assets/world_24x24/oryx_16bit_fantasy_world_836.png
+  artifactKey: Guid(1fa4a512a9942134e82a608e901f0a6e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/assets/world_24x24/oryx_16bit_fantasy_world_836.png using Guid(1fa4a512a9942134e82a608e901f0a6e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '45759ad51d91aaf722d8f76c43c08f65') in 0.038709 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/Sprites/assets/world_24x24/oryx_16bit_fantasy_world_1016.png
+  artifactKey: Guid(ec018c789d4271e49bcba003b70d120a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/assets/world_24x24/oryx_16bit_fantasy_world_1016.png using Guid(ec018c789d4271e49bcba003b70d120a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0de81505d96a4388f06ca797b642fabf') in 0.033301 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000030 seconds.
+  path: Assets/Sprites/assets/world_24x24/oryx_16bit_fantasy_world_1104.png
+  artifactKey: Guid(d94b4ae11c8c9674e8b3b41e91b24e25) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/assets/world_24x24/oryx_16bit_fantasy_world_1104.png using Guid(d94b4ae11c8c9674e8b3b41e91b24e25) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bbaca265d3bf41b1d6ec85e0590c9610') in 0.028279 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Assets/Sprites/assets/world_24x24/oryx_16bit_fantasy_world_1116.png
+  artifactKey: Guid(2cd1177c46c9c134c9d27032038ccc21) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/assets/world_24x24/oryx_16bit_fantasy_world_1116.png using Guid(2cd1177c46c9c134c9d27032038ccc21) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fcb37503e728d501966150f917cfdca0') in 0.032691 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/Sprites/assets/world_24x24/oryx_16bit_fantasy_world_1000.png
+  artifactKey: Guid(b11fd9fc087918042bb5b8aff37a4bb4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/assets/world_24x24/oryx_16bit_fantasy_world_1000.png using Guid(b11fd9fc087918042bb5b8aff37a4bb4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c512e661d6080d607c1d84f6a13c2327') in 0.029156 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000067 seconds.
+  path: Assets/Sprites/assets/world_24x24/oryx_16bit_fantasy_world_1007.png
+  artifactKey: Guid(a95c09df6a9e3d649b11fde853560e46) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/assets/world_24x24/oryx_16bit_fantasy_world_1007.png using Guid(a95c09df6a9e3d649b11fde853560e46) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c4ec3d9541afa875416c62a2aa93d604') in 0.031311 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Assets/Sprites/assets/world_24x24/oryx_16bit_fantasy_world_1123.png
+  artifactKey: Guid(68beac14d5ec71241a53b9b5b6a313de) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/assets/world_24x24/oryx_16bit_fantasy_world_1123.png using Guid(68beac14d5ec71241a53b9b5b6a313de) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b8ed9c8fadaf4123c90e5c72a5112fa6') in 0.027719 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000024 seconds.
+  path: Assets/Sprites/assets/world_24x24/oryx_16bit_fantasy_world_1124.png
+  artifactKey: Guid(306f54689d556c143bdb95e319891a9a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/assets/world_24x24/oryx_16bit_fantasy_world_1124.png using Guid(306f54689d556c143bdb95e319891a9a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ece9fd81d8d36b25fca3ff9601239b97') in 0.027914 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/Sprites/assets/world_24x24/oryx_16bit_fantasy_world_1097.png
+  artifactKey: Guid(f48ce969ac05b15419c496d2e09fab50) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/assets/world_24x24/oryx_16bit_fantasy_world_1097.png using Guid(f48ce969ac05b15419c496d2e09fab50) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7ad243c15d0dd34ea559998d17d45e2a') in 0.023596 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/Sprites/assets/world_24x24/oryx_16bit_fantasy_world_1002.png
+  artifactKey: Guid(40da4ad22ed1124468faf564188fc2ca) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/assets/world_24x24/oryx_16bit_fantasy_world_1002.png using Guid(40da4ad22ed1124468faf564188fc2ca) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a2431d883d2b89d469d0642ecd5ac674') in 0.022156 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/Sprites/assets/world_24x24/oryx_16bit_fantasy_world_1029.png
+  artifactKey: Guid(532cd8c51d2fb6742a6159304b211e8b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/assets/world_24x24/oryx_16bit_fantasy_world_1029.png using Guid(532cd8c51d2fb6742a6159304b211e8b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4717e0d41e4b5f3c9df9bfe7a054adb5') in 0.027176 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/Sprites/assets/world_24x24/oryx_16bit_fantasy_world_1014.png
+  artifactKey: Guid(563119b3e954e194d8afac7c79b7743e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/assets/world_24x24/oryx_16bit_fantasy_world_1014.png using Guid(563119b3e954e194d8afac7c79b7743e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6acdf048573174f5476d480eb90f5668') in 0.024920 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/Sprites/assets/world_24x24/oryx_16bit_fantasy_world_1109.png
+  artifactKey: Guid(86f1aac3765515c43a6a232a21bd2664) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/assets/world_24x24/oryx_16bit_fantasy_world_1109.png using Guid(86f1aac3765515c43a6a232a21bd2664) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '77b5ffedcee4edb201ba2dd7c47939c9') in 0.024526 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/Sprites/assets/world_24x24/oryx_16bit_fantasy_world_1128.png
+  artifactKey: Guid(8044a6fb481e3a44e905580f108982e7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/assets/world_24x24/oryx_16bit_fantasy_world_1128.png using Guid(8044a6fb481e3a44e905580f108982e7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4108633dc20d2978e22fb210a894f822') in 0.022746 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/Sprites/assets/world_24x24/oryx_16bit_fantasy_world_835.png
+  artifactKey: Guid(fb7084f3b7c14cf4b9d084e0676277bd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/assets/world_24x24/oryx_16bit_fantasy_world_835.png using Guid(fb7084f3b7c14cf4b9d084e0676277bd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2fe4e6b328106f47eb39a75a87dbbb0c') in 0.021535 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/Sprites/assets/world_24x24/oryx_16bit_fantasy_world_997.png
+  artifactKey: Guid(571d3b9363932fe43bdba27e2c5e4869) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/assets/world_24x24/oryx_16bit_fantasy_world_997.png using Guid(571d3b9363932fe43bdba27e2c5e4869) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c17b4937e831df56386dd1f8b5a87799') in 0.022142 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.009856 seconds.
+  path: Assets/Sprites/assets/world_24x24/oryx_16bit_fantasy_world_591.png
+  artifactKey: Guid(f27d5502d119c0d4eacdf437cab4003d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/assets/world_24x24/oryx_16bit_fantasy_world_591.png using Guid(f27d5502d119c0d4eacdf437cab4003d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1499685fe66400b67c64daddcb8da5b7') in 0.024819 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Assets/Sprites/assets/world_24x24/oryx_16bit_fantasy_world_595.png
+  artifactKey: Guid(10bff1c6d7225a04e9073b911c8d98a2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/assets/world_24x24/oryx_16bit_fantasy_world_595.png using Guid(10bff1c6d7225a04e9073b911c8d98a2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3f98acfd19836f76ad55cc58f43d35e6') in 0.021674 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.015596 seconds.
+  path: Assets/Sprites/assets/world_24x24/oryx_16bit_fantasy_world_506.png
+  artifactKey: Guid(53717ff7d41a30646a25c5f3ee927a7a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/assets/world_24x24/oryx_16bit_fantasy_world_506.png using Guid(53717ff7d41a30646a25c5f3ee927a7a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bc7a984d9aa8365faf330cffa7def596') in 0.024897 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/Sprites/assets/world_24x24/oryx_16bit_fantasy_world_518.png
+  artifactKey: Guid(7d6dda627bbc8914facf65a3949bad44) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/assets/world_24x24/oryx_16bit_fantasy_world_518.png using Guid(7d6dda627bbc8914facf65a3949bad44) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9390787d5a17899f4f50b2e6df4a2df1') in 0.025506 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/Sprites/assets/world_24x24/oryx_16bit_fantasy_world_525.png
+  artifactKey: Guid(976d2bab77c2cfa4f85af9eca69b5615) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/assets/world_24x24/oryx_16bit_fantasy_world_525.png using Guid(976d2bab77c2cfa4f85af9eca69b5615) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bac573c4e7f60e52cf4964825f4d0252') in 0.023939 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000035 seconds.
+  path: Assets/Sprites/assets/world_24x24/oryx_16bit_fantasy_world_519.png
+  artifactKey: Guid(38259a3f2816ef84d83e660caca2350e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/assets/world_24x24/oryx_16bit_fantasy_world_519.png using Guid(38259a3f2816ef84d83e660caca2350e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '25c4c9da4ca3a6f8a82ab493d53be830') in 0.024432 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000034 seconds.
+  path: Assets/Sprites/assets/world_24x24/oryx_16bit_fantasy_world_515.png
+  artifactKey: Guid(edbdd1752a9d53f4ab4a4290eb4679d2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/assets/world_24x24/oryx_16bit_fantasy_world_515.png using Guid(edbdd1752a9d53f4ab4a4290eb4679d2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '312826892cf9e33960830f369956db6e') in 0.024812 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000043 seconds.
+  path: Assets/Sprites/assets/world_24x24/oryx_16bit_fantasy_world_521.png
+  artifactKey: Guid(5c8ed34b6423ae345bd1bc94a939a936) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/assets/world_24x24/oryx_16bit_fantasy_world_521.png using Guid(5c8ed34b6423ae345bd1bc94a939a936) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6139dd05567500ada4cef39fe75b5e48') in 0.028060 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.812163 seconds.
+  path: Assets/Sprites/assets/world_24x24/oryx_16bit_fantasy_world_303.png
+  artifactKey: Guid(3c4ca96bfc86d5440aef77a8b4a8ed21) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/assets/world_24x24/oryx_16bit_fantasy_world_303.png using Guid(3c4ca96bfc86d5440aef77a8b4a8ed21) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '920303ad3f2629754a8afc638e3964d0') in 0.037217 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/Sprites/assets/world_24x24/oryx_16bit_fantasy_world_299.png
+  artifactKey: Guid(3edbae8f916ed644bb6c4b757d1bc0a7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/assets/world_24x24/oryx_16bit_fantasy_world_299.png using Guid(3edbae8f916ed644bb6c4b757d1bc0a7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4b5a586246f017bd840fe3c0d04d40bd') in 0.029534 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/Sprites/assets/world_24x24/oryx_16bit_fantasy_world_302.png
+  artifactKey: Guid(589cef21b387fa749aad1758a0d52ea2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/assets/world_24x24/oryx_16bit_fantasy_world_302.png using Guid(589cef21b387fa749aad1758a0d52ea2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c7e27a11e2eb100da4e4412c0c09e58a') in 0.028213 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000024 seconds.
+  path: Assets/Sprites/assets/world_24x24/oryx_16bit_fantasy_world_309.png
+  artifactKey: Guid(006c45fc9354bb74f814ec4968423503) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/assets/world_24x24/oryx_16bit_fantasy_world_309.png using Guid(006c45fc9354bb74f814ec4968423503) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '29a2986616902a0b42673fe500773c6f') in 0.027612 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Assets/Sprites/assets/world_24x24/oryx_16bit_fantasy_world_313.png
+  artifactKey: Guid(90faa26305b9c7945928ad41202dbae0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/assets/world_24x24/oryx_16bit_fantasy_world_313.png using Guid(90faa26305b9c7945928ad41202dbae0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b10a8ccf34cb45176e9f83302eb6a364') in 0.022410 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000031 seconds.
+  path: Assets/Sprites/assets/world_24x24/oryx_16bit_fantasy_world_297.png
+  artifactKey: Guid(e5ea2db4bd8b397469492c2b8db336e6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/assets/world_24x24/oryx_16bit_fantasy_world_297.png using Guid(e5ea2db4bd8b397469492c2b8db336e6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '983a51fdaeb23fa894991ec66431b766') in 0.023454 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000030 seconds.
+  path: Assets/Sprites/assets/world_24x24/oryx_16bit_fantasy_world_300.png
+  artifactKey: Guid(0daa50ac94ea1bc47a0b596370b584d0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/assets/world_24x24/oryx_16bit_fantasy_world_300.png using Guid(0daa50ac94ea1bc47a0b596370b584d0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5f9b1b837e1d45d989d457700c8cffde') in 0.022190 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.419764 seconds.
+  path: Assets/Sprites/assets/items_16x16/oryx_16bit_fantasy_items_302.png
+  artifactKey: Guid(e234237ee831a664a9f8d11d595983f8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/assets/items_16x16/oryx_16bit_fantasy_items_302.png using Guid(e234237ee831a664a9f8d11d595983f8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '95f32833b11ad8a238834aeb14f6fdb2') in 0.028578 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/Sprites/assets/items_16x16/oryx_16bit_fantasy_items_305.png
+  artifactKey: Guid(149e04799fc64b247b00c720a3bd0802) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/assets/items_16x16/oryx_16bit_fantasy_items_305.png using Guid(149e04799fc64b247b00c720a3bd0802) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '52a2f19a7e3c0ad5b6a3e7a014005453') in 0.022314 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.563482 seconds.
+  path: Assets/Sprites/assets/items_16x16/oryx_16bit_fantasy_items_290.png
+  artifactKey: Guid(5e0031ab2bf582b44b2938bfdbc70e64) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/assets/items_16x16/oryx_16bit_fantasy_items_290.png using Guid(5e0031ab2bf582b44b2938bfdbc70e64) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b6b9443d0717df32ae55072662d63451') in 0.035183 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/Sprites/assets/items_16x16/oryx_16bit_fantasy_items_298.png
+  artifactKey: Guid(52e776c54d01e2542be8aa8c03ea740c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/assets/items_16x16/oryx_16bit_fantasy_items_298.png using Guid(52e776c54d01e2542be8aa8c03ea740c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7c77f44ec8a4472faa6c909969c2aa66') in 0.024431 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/Sprites/assets/items_16x16/oryx_16bit_fantasy_items_284.png
+  artifactKey: Guid(41b6c9d78d0d6bd4e87346d025356a47) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/assets/items_16x16/oryx_16bit_fantasy_items_284.png using Guid(41b6c9d78d0d6bd4e87346d025356a47) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '291493767025c67684e4826900994b98') in 0.021690 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000024 seconds.
+  path: Assets/Sprites/assets/items_16x16/oryx_16bit_fantasy_items_286.png
+  artifactKey: Guid(be57f0dbf2a21e34496b6e5963bc36db) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/assets/items_16x16/oryx_16bit_fantasy_items_286.png using Guid(be57f0dbf2a21e34496b6e5963bc36db) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd2f23bf63f97bb576840702ddc884ea0') in 0.026412 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/Sprites/assets/items_16x16/oryx_16bit_fantasy_items_301.png
+  artifactKey: Guid(0269e9e673e2c9145b7e8cb9fc82119b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/assets/items_16x16/oryx_16bit_fantasy_items_301.png using Guid(0269e9e673e2c9145b7e8cb9fc82119b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7bd1452eec38e2db927dae959899da12') in 0.022940 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000034 seconds.
+  path: Assets/Sprites/assets/items_16x16/oryx_16bit_fantasy_items_279.png
+  artifactKey: Guid(afe610ca2ea03254d874860ab30ca798) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/assets/items_16x16/oryx_16bit_fantasy_items_279.png using Guid(afe610ca2ea03254d874860ab30ca798) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c341812350a462465ff00d9a91c92c6f') in 0.033530 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000026 seconds.
+  path: Assets/Sprites/assets/items_16x16/oryx_16bit_fantasy_items_236.png
+  artifactKey: Guid(00cbb08027e362c409d1012ea0424811) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/assets/items_16x16/oryx_16bit_fantasy_items_236.png using Guid(00cbb08027e362c409d1012ea0424811) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '644860ce5b2c08c301fbeb3265917c83') in 0.021806 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/Sprites/assets/items_16x16/oryx_16bit_fantasy_items_251.png
+  artifactKey: Guid(e4caee34908f95842975acec7e290147) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/assets/items_16x16/oryx_16bit_fantasy_items_251.png using Guid(e4caee34908f95842975acec7e290147) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f973b719283142af7fef27a0de79192d') in 0.022075 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Assets/Sprites/assets/items_16x16/oryx_16bit_fantasy_items_207.png
+  artifactKey: Guid(d321b7532a6057d47a8f129b50bf6c16) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/assets/items_16x16/oryx_16bit_fantasy_items_207.png using Guid(d321b7532a6057d47a8f129b50bf6c16) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '791239aecfeb51c03b2ce81b73892275') in 0.033690 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/Sprites/assets/items_16x16/oryx_16bit_fantasy_items_209.png
+  artifactKey: Guid(91f83a011a13b524cb9aade0224bf09b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/assets/items_16x16/oryx_16bit_fantasy_items_209.png using Guid(91f83a011a13b524cb9aade0224bf09b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '91a5a2e4adf9b526b8368aa07548687f') in 0.023902 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/Sprites/assets/items_16x16/oryx_16bit_fantasy_items_221.png
+  artifactKey: Guid(b29e8b22732a4524499e4f077e11283f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/assets/items_16x16/oryx_16bit_fantasy_items_221.png using Guid(b29e8b22732a4524499e4f077e11283f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3232fd8160757e0911e34e0cd0003a69') in 0.024140 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/Sprites/assets/items_16x16/oryx_16bit_fantasy_items_212.png
+  artifactKey: Guid(751877cdaaadbea41925724df18c450d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/assets/items_16x16/oryx_16bit_fantasy_items_212.png using Guid(751877cdaaadbea41925724df18c450d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9f6f000088e78ece7ae258bf611ba389') in 0.039656 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/Sprites/assets/items_16x16/oryx_16bit_fantasy_items_246.png
+  artifactKey: Guid(4724d0fd5456cf743a1ed77cf9a62eae) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/assets/items_16x16/oryx_16bit_fantasy_items_246.png using Guid(4724d0fd5456cf743a1ed77cf9a62eae) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '92b80a3481ef8bd6de055c872fe16dee') in 0.024330 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000034 seconds.
+  path: Assets/Sprites/assets/items_16x16/oryx_16bit_fantasy_items_248.png
+  artifactKey: Guid(14d140143fb20a7488b46d0f40967ea2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/assets/items_16x16/oryx_16bit_fantasy_items_248.png using Guid(14d140143fb20a7488b46d0f40967ea2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '73d97f7f13ae06c40de84d9b6198d868') in 0.026789 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000024 seconds.
+  path: Assets/Sprites/assets/items_16x16/oryx_16bit_fantasy_items_241.png
+  artifactKey: Guid(b3466cccca4b5ee4495e3600d3ced936) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/assets/items_16x16/oryx_16bit_fantasy_items_241.png using Guid(b3466cccca4b5ee4495e3600d3ced936) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'abce94b60e441e4d08f480bb2f6dab4b') in 0.027213 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/Sprites/assets/items_16x16/oryx_16bit_fantasy_items_226.png
+  artifactKey: Guid(790b1f22400ae07439525dbada647153) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/assets/items_16x16/oryx_16bit_fantasy_items_226.png using Guid(790b1f22400ae07439525dbada647153) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9f686144713d684185bad016ab26c1ff') in 0.031324 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/Sprites/assets/items_16x16/oryx_16bit_fantasy_items_296.png
+  artifactKey: Guid(85a7396664df96444afb063c9584ce71) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/assets/items_16x16/oryx_16bit_fantasy_items_296.png using Guid(85a7396664df96444afb063c9584ce71) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1af56137c01356591ac0f1482010e8a1') in 0.023381 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000015 seconds.
+  path: Assets/Sprites/assets/items_16x16/oryx_16bit_fantasy_items_242.png
+  artifactKey: Guid(89503f7b0df17b04896891b14a11a536) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/assets/items_16x16/oryx_16bit_fantasy_items_242.png using Guid(89503f7b0df17b04896891b14a11a536) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c193a1aa81665ffbdefe0d2cfbd7e1e9') in 0.025455 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/Sprites/assets/items_16x16/oryx_16bit_fantasy_items_228.png
+  artifactKey: Guid(2847ee4cf60141247a47f29181efa60e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/assets/items_16x16/oryx_16bit_fantasy_items_228.png using Guid(2847ee4cf60141247a47f29181efa60e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0c62a809e12383e00e5eecd82da38af9') in 0.023498 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/Sprites/assets/items_16x16/oryx_16bit_fantasy_items_282.png
+  artifactKey: Guid(988048a3208d19f47aca0f34a0e6b823) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/assets/items_16x16/oryx_16bit_fantasy_items_282.png using Guid(988048a3208d19f47aca0f34a0e6b823) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ab855f2f8bd288314e73b8a2a8c0f0db') in 0.030810 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/Sprites/assets/items_16x16/oryx_16bit_fantasy_items_297.png
+  artifactKey: Guid(25330420cbd08c64d8c292e1df26e36e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/assets/items_16x16/oryx_16bit_fantasy_items_297.png using Guid(25330420cbd08c64d8c292e1df26e36e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4987b9ee7b6f52df9a46dcdc161fdfcb') in 0.038045 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000028 seconds.
+  path: Assets/Sprites/assets/items_16x16/oryx_16bit_fantasy_items_210.png
+  artifactKey: Guid(0d5e8c2cda4c06140aa5b1327c3542de) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/assets/items_16x16/oryx_16bit_fantasy_items_210.png using Guid(0d5e8c2cda4c06140aa5b1327c3542de) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dfa222679f2379767a72b4fb7dd8b213') in 0.025947 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 2.503798 seconds.
+  path: Assets/Sprites/assets/items_16x16/oryx_16bit_fantasy_items_200.png
+  artifactKey: Guid(837ea73b92c475d4593f4caa7b2d2bd6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/assets/items_16x16/oryx_16bit_fantasy_items_200.png using Guid(837ea73b92c475d4593f4caa7b2d2bd6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '37ae61dfb533a38a836f111fa18405bf') in 0.027179 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000024 seconds.
+  path: Assets/Sprites/assets/items_16x16/oryx_16bit_fantasy_items_197.png
+  artifactKey: Guid(0880a6cd74871904981a4a1598f081f9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/assets/items_16x16/oryx_16bit_fantasy_items_197.png using Guid(0880a6cd74871904981a4a1598f081f9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3d9eb043417fe9ea2cf336abc2befc4c') in 0.024125 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/Sprites/assets/items_16x16/oryx_16bit_fantasy_items_199.png
+  artifactKey: Guid(5de241085b5484f4488049189d0e5912) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/assets/items_16x16/oryx_16bit_fantasy_items_199.png using Guid(5de241085b5484f4488049189d0e5912) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7779da73300e3b080f59d94951d10a7e') in 0.035310 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000028 seconds.
+  path: Assets/Sprites/assets/items_16x16/oryx_16bit_fantasy_items_205.png
+  artifactKey: Guid(c35ab7a42a65a014a86c83a1ecd2bd14) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/assets/items_16x16/oryx_16bit_fantasy_items_205.png using Guid(c35ab7a42a65a014a86c83a1ecd2bd14) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5ba25b024d59ca1b365dc78c43acf60e') in 0.024103 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.011169 seconds.
+  path: Assets/Sprites/assets/items_16x16/oryx_16bit_fantasy_items_188.png
+  artifactKey: Guid(f35bbbfdf226b0049a4e2f7869c99fe3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/assets/items_16x16/oryx_16bit_fantasy_items_188.png using Guid(f35bbbfdf226b0049a4e2f7869c99fe3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '67a1d9a3b6100a51873bcd16117632e7') in 0.027538 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000028 seconds.
+  path: Assets/Sprites/assets/items_16x16/oryx_16bit_fantasy_items_192.png
+  artifactKey: Guid(4f305fb9eff1c414cb112e8f1a0f5132) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/assets/items_16x16/oryx_16bit_fantasy_items_192.png using Guid(4f305fb9eff1c414cb112e8f1a0f5132) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a4afdd53cbdff2191b877fc99d81ab23') in 0.022329 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 13.677846 seconds.
+  path: Assets/Sprites/assets/items_16x16/oryx_16bit_fantasy_items_196.png
+  artifactKey: Guid(c4c8afe5eba5fbd458c552c078e5a9b8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/assets/items_16x16/oryx_16bit_fantasy_items_196.png using Guid(c4c8afe5eba5fbd458c552c078e5a9b8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e7d77881c5ed5071038c679ed94b2091') in 0.011042 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 7.157673 seconds.
+  path: Assets/Sprites/assets/items_16x16/oryx_16bit_fantasy_items_135.png
+  artifactKey: Guid(330985739b4273a4f98c7e1f09821d02) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/assets/items_16x16/oryx_16bit_fantasy_items_135.png using Guid(330985739b4273a4f98c7e1f09821d02) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'def8023b40ba332048f4e3091c525265') in 0.016738 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 4.121008 seconds.
+  path: Assets/Sprites/assets/items_16x16/oryx_16bit_fantasy_items_135.png
+  artifactKey: Guid(330985739b4273a4f98c7e1f09821d02) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/assets/items_16x16/oryx_16bit_fantasy_items_135.png using Guid(330985739b4273a4f98c7e1f09821d02) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8d97b95a14b596c079d9629fbaa0f8cc') in 0.010788 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 3.805767 seconds.
+  path: Packages/com.unity.collab-proxy/Editor/Collaborate/Assets/Icons/added-file-dark.png
+  artifactKey: Guid(1a4f52b613391cd449af3ad2e44affeb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.unity.collab-proxy/Editor/Collaborate/Assets/Icons/added-file-dark.png using Guid(1a4f52b613391cd449af3ad2e44affeb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '780ab4c976e9709d675b253409452cfa') in 0.022578 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Packages/com.unity.2d.animation/Editor/Assets/SkinningModule/Icons/Light/Bone_Influence.png
+  artifactKey: Guid(e92fc44f12c21dd44a49e390f39f7ffd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.unity.2d.animation/Editor/Assets/SkinningModule/Icons/Light/Bone_Influence.png using Guid(e92fc44f12c21dd44a49e390f39f7ffd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '22671d60829dba31d09c937d1f140ca7') in 0.023268 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Packages/com.unity.collab-proxy/Editor/Collaborate/Assets/Icons/back-dark@2x.png
+  artifactKey: Guid(9c6313a5316f8a34b852bf94ff96e3ab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.unity.collab-proxy/Editor/Collaborate/Assets/Icons/back-dark@2x.png using Guid(9c6313a5316f8a34b852bf94ff96e3ab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00e18c5ffd3b7e8c54f113cf0bdc0fae') in 0.024369 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Packages/com.unity.2d.animation/Editor/Assets/SkinningModule/Icons/Light/Bone.png
+  artifactKey: Guid(62ce01ddca719d34ea9648c586a7cc94) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.unity.2d.animation/Editor/Assets/SkinningModule/Icons/Light/Bone.png using Guid(62ce01ddca719d34ea9648c586a7cc94) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '947340cc73ea1c229024f707a4f18d7e') in 0.024190 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Packages/com.unity.2d.animation/Editor/Assets/SkinningModule/Icons/Selected/Bone_Influence.png
+  artifactKey: Guid(ff00345da0563d641903c5bd5bb748a4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.unity.2d.animation/Editor/Assets/SkinningModule/Icons/Selected/Bone_Influence.png using Guid(ff00345da0563d641903c5bd5bb748a4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9d45dc9b11e4f2afa840ea54541203b1') in 0.023075 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Packages/com.unity.2d.animation/Editor/Assets/SkinningModule/Icons/Light/Bone_Influence@2x.png
+  artifactKey: Guid(7395bf0bc3cc40e4ab2dda5ec6832261) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.unity.2d.animation/Editor/Assets/SkinningModule/Icons/Light/Bone_Influence@2x.png using Guid(7395bf0bc3cc40e4ab2dda5ec6832261) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '626d2718d6c692e1e2782c4342a52c63') in 0.027149 seconds 
+========================================================================
+Received Prepare
+Refreshing native plugins compatible for Editor in 8.58 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 31 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 31 unused Assets / (192.8 KB). Loaded Objects now: 4588.
+Memory consumption went from 77.4 MB to 77.2 MB.
+Total: 3.470900 ms (FindLiveObjects: 0.406100 ms CreateObjectMapping: 0.113300 ms MarkObjects: 2.762000 ms  DeleteObjects: 0.188100 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+Editor requested this worker to shutdown with reason: Scaling down because of idle timeout
+AssetImportWorker is now disconnected from the server
+Process exiting
+Exiting without the bug reporter. Application will terminate with return code 0
