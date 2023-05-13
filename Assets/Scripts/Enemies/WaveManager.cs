@@ -11,6 +11,7 @@ public class WaveManager : MonoBehaviour
     [SerializeField] private GameObject[] enemyPrefabs;
     
     [SerializeField] TextMeshProUGUI waveUI;
+    [SerializeField] TextMeshProUGUI enemiesLeftToSpawnUI;
     [SerializeField] TextMeshProUGUI countdownUI;
 
     [Header("Wave Settings")]
@@ -95,6 +96,8 @@ public class WaveManager : MonoBehaviour
         {
             return;
         }
+        
+        enemiesLeftToSpawnUI.text = enemiesLeftToSpawn.ToString();
     
         if (!isSpawning) return;
 
@@ -134,9 +137,14 @@ public class WaveManager : MonoBehaviour
         int[] enemyWeights = new int[enemyPrefabsCount];
 
         // Calculate weights based on the current wave and enemy prefabs count
-        for (int i = 0; i < enemyPrefabsCount; i++)
+        enemyWeights[0] = Mathf.Max(20, 80 - (currentWave - 1) * 10); // first enemy type's weight
+
+        int remainingWeight = 100 - enemyWeights[0]; // The remaining weight to be distributed
+        int remainingTypes = enemyPrefabsCount - 1;  // The number of remaining enemy types
+
+        for (int i = 1; i < enemyPrefabsCount; i++)
         {
-            enemyWeights[i] = Mathf.Max(1, currentWave - i);
+            enemyWeights[i] = remainingWeight / remainingTypes; // other enemy types' weights
         }
 
         // Calculate the total weight
@@ -160,6 +168,7 @@ public class WaveManager : MonoBehaviour
         // Default to the first index (easiest enemy)
         return 0;
     }
+
 
     private int EnemiesPerWave()
     {
