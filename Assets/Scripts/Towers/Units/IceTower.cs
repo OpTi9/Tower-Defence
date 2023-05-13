@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class IceTower : Tower
 {
-    public float slowAmount = 0.5f; // Represents the percentage by which the speed is reduced (0.5 = 50% reduction)
+    [SerializeField]private float slowAmount; // Represents the percentage by which the speed is reduced (0.5 = 50% reduction)
 
     protected override void Update()
     {
@@ -22,6 +22,12 @@ public class IceTower : Tower
                 enemy.ApplySlow(slowAmount);
             }
         }
+    }
+    
+    protected override void Upgrade()
+    {
+        base.Upgrade();
+        slowAmount += 0.15f; // You can adjust this value as needed
     }
 }
 

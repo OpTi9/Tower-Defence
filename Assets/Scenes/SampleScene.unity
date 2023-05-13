@@ -6656,7 +6656,7 @@ PrefabInstance:
       objectReference: {fileID: 44681087}
     - target: {fileID: 1577439067907691083, guid: 4e4f706d030e05b4b983e31becfeed35, type: 3}
       propertyPath: playerHealth
-      value: 100
+      value: 20
       objectReference: {fileID: 0}
     - target: {fileID: 1577439067907691083, guid: 4e4f706d030e05b4b983e31becfeed35, type: 3}
       propertyPath: gameOverPanel
@@ -6708,7 +6708,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1789308879996984204, guid: b80ba13173892f54689e8e6263c5173c, type: 3}
       propertyPath: baseEnemies
-      value: 8
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1789308879996984204, guid: b80ba13173892f54689e8e6263c5173c, type: 3}
       propertyPath: countdownUI
@@ -6716,11 +6716,15 @@ PrefabInstance:
       objectReference: {fileID: 961740849}
     - target: {fileID: 1789308879996984204, guid: b80ba13173892f54689e8e6263c5173c, type: 3}
       propertyPath: enemiesPerSecond
-      value: 2
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1789308879996984204, guid: b80ba13173892f54689e8e6263c5173c, type: 3}
       propertyPath: timeBetweenWaves
-      value: 15
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 1789308879996984204, guid: b80ba13173892f54689e8e6263c5173c, type: 3}
+      propertyPath: difficultyScalingFactor
+      value: 1.2
       objectReference: {fileID: 0}
     - target: {fileID: 1789308879996984204, guid: b80ba13173892f54689e8e6263c5173c, type: 3}
       propertyPath: enemyPrefabs.Array.size
@@ -6935,6 +6939,10 @@ PrefabInstance:
     - target: {fileID: 6098570550628973668, guid: 09c292e30f4eb534098801d7ea1415e6, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9014340049523900349, guid: 09c292e30f4eb534098801d7ea1415e6, type: 3}
+      propertyPath: currency
+      value: 100
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 09c292e30f4eb534098801d7ea1415e6, type: 3}

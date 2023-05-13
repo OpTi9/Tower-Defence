@@ -24,7 +24,6 @@ public class CurrencyManager : MonoBehaviour
 
     private void Start()
     {
-        currency = 10;
         totalCurrencyEarned += currency;
     }
 

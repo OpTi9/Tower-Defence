@@ -121,7 +121,7 @@ public abstract class Tower : MonoBehaviour
         return Vector2.Distance(target.position, transform.position) <= range;
     }
 
-    public void Upgrade()
+    protected virtual void Upgrade()
     {
         if (upgradeCost > CurrencyManager.Instance.currency) return;
         CurrencyManager.Instance.SpendCurrency(upgradeCost);
@@ -138,7 +138,7 @@ public abstract class Tower : MonoBehaviour
         Debug.Log("new tower range: " + range);
     }
     
-    public void Sell()
+    private void Sell()
     {
         if (GameManager.Instance.currentState != GameManager.GameState.Building)
         {
