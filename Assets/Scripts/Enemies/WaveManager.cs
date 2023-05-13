@@ -26,7 +26,6 @@ public class WaveManager : MonoBehaviour
     public static UnityEvent onEnemyDestroy = new UnityEvent();
 
     private int currentWave = 1;
-    private float nextWaveStartTime;
     private float timeSinceLastSpawn;
     private int enemiesAlive;
     private int enemiesLeftToSpawn;
@@ -86,7 +85,6 @@ public class WaveManager : MonoBehaviour
         isSpawning = false;
         timeSinceLastSpawn = 0f;
         currentWave++;
-        nextWaveStartTime = Time.time + timeBetweenWaves;
         StartCountdown(timeBetweenWaves);
     }
     
@@ -137,7 +135,7 @@ public class WaveManager : MonoBehaviour
         int[] enemyWeights = new int[enemyPrefabsCount];
 
         // Calculate weights based on the current wave and enemy prefabs count
-        enemyWeights[0] = Mathf.Max(20, 80 - (currentWave - 1) * 10); // first enemy type's weight
+        enemyWeights[0] = Mathf.Max(20, 90 - (currentWave - 1) * 10); // first enemy type's weight
 
         int remainingWeight = 100 - enemyWeights[0]; // The remaining weight to be distributed
         int remainingTypes = enemyPrefabsCount - 1;  // The number of remaining enemy types

@@ -45,4 +45,9 @@ public class Projectile : MonoBehaviour
         OnHitEnemy(enemy);
         Destroy(gameObject);
     }
+    
+    private void OnBecameInvisible()
+    {
+        Destroy(gameObject);
+    }
 }

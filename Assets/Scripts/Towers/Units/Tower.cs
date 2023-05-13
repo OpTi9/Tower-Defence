@@ -29,7 +29,7 @@ public abstract class Tower : MonoBehaviour
     
     public LayerMask enemyMask;
     
-    private float rotationSpeed = 200f;
+    private float rotationSpeed = 400f;
     public Transform rotationPoint;
     
     protected Transform target;

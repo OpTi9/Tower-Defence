@@ -54,7 +54,7 @@ MonoBehaviour:
   damage: 0
   attackSpeed: 0
   range: 2
-  towerCost: 30
+  towerCost: 40
   projectilePrefab: {fileID: 4783738655787574512, guid: 29df24b1344aabe4183e33cf7b25bf9c, type: 3}
   firingPoint: {fileID: 2491386769337110367}
   enemyMask:

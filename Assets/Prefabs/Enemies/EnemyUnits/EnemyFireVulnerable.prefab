@@ -86,7 +86,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   health: 40
   speed: 1.5
-  reward: 20
+  reward: 15
   penalty: 3
   spriteRenderer: {fileID: 2053567268309361950}
   fireDamageMultiplier: 2
