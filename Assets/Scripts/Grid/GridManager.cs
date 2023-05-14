@@ -7,9 +7,8 @@ public class GridManager : MonoBehaviour
     public float cellSize;
     public GameObject squarePrefab;
     public float squareSize;
-    
-    public int[,] grid;
-    public Plot[,] plotGrid;
+
+    private Plot[,] PlotGrid;
 
     public static GridManager Instance { get; private set; }
     
@@ -32,14 +31,12 @@ public class GridManager : MonoBehaviour
 
     private void CreateGrid()
     {
-        grid = new int[rows, columns];
-        plotGrid = new Plot[rows, columns]; // initialize plotGrid
+        PlotGrid = new Plot[rows, columns]; // initialize plotGrid
 
         for (int i = 0; i < rows; i++)
         {
             for (int j = 0; j < columns; j++)
             {
-                grid[i, j] = 0; // Empty state
                 Vector3 worldPosition = GetWorldPosition(i, j);
                 GameObject square = Instantiate(squarePrefab, worldPosition, Quaternion.identity);
                 square.transform.SetParent(transform);
@@ -48,7 +45,7 @@ public class GridManager : MonoBehaviour
                 Plot plot = square.GetComponent<Plot>(); // get Plot component
                 if (plot != null)
                 {
-                    plotGrid[i, j] = plot; // store the plot in the plotGrid
+                    PlotGrid[i, j] = plot; // store the plot in the plotGrid
                 }
             }
         }
@@ -58,7 +55,7 @@ public class GridManager : MonoBehaviour
     {
         if (IsWithinBounds(gridPosition))
         {
-            return plotGrid[gridPosition.x, gridPosition.y];
+            return PlotGrid[gridPosition.x, gridPosition.y];
         }
         return null;
     }

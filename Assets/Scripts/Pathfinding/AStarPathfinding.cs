@@ -4,7 +4,6 @@ using UnityEngine;
 public class AStarPathfinding : MonoBehaviour
 {
     public GridManager gridManager;
-    private int[,] grid => gridManager.grid;
     
     private Vector2Int[] directions = new Vector2Int[]
     {
@@ -37,7 +36,8 @@ public class AStarPathfinding : MonoBehaviour
             foreach (Vector2Int direction in directions)
             {
                 Vector2Int next = current + direction;
-                if (gridManager.IsWithinBounds(next) && grid[next.x, next.y] == 0)
+                Plot plot = gridManager.GetPlotAtGridPosition(next);
+                if (plot != null && !plot.HasTower())
                 {
                     float newCost = costSoFar[current] + 1;
                     if (!costSoFar.ContainsKey(next) || newCost < costSoFar[next])

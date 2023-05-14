@@ -154,14 +154,6 @@ public abstract class Tower : MonoBehaviour
         {
             Debug.Log("removing tower");
             plotScript.RemoveTower();
-        
-            // Also update the grid in the GridManager
-            Vector2Int gridPosition = GridManager.Instance.GetGridPosition(plotScript.transform.position);
-            if (GridManager.Instance.IsWithinBounds(gridPosition))
-            {
-                GridManager.Instance.grid[gridPosition.x, gridPosition.y] = 0; // Mark the cell as empty
-                Debug.Log(GridManager.Instance.grid[gridPosition.x, gridPosition.y]);
-            }
         }
 
         // Destroy the tower game object

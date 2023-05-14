@@ -103,7 +103,7 @@ public class WaveManager : MonoBehaviour
         currentPath = GameManager.Instance.GetPath();
 
         isSpawning = true;
-        enemiesPerSecond *= (1 + (currentWave - 1) * enemiesPerSecondGrowth);
+        enemiesPerSecond *= 1 + (currentWave - 1) * enemiesPerSecondGrowth;
         enemiesLeftToSpawn = EnemiesPerWave();
     }
 
