@@ -36,7 +36,8 @@ public class Projectile : MonoBehaviour
 
     protected virtual void OnHitEnemy(Enemy enemy)
     {
-        enemy.TakeDamage(damage);
+        // be sure that the enemy isn't already dead
+        enemy?.TakeDamage(damage);
     }
 
     private void OnCollisionEnter2D(Collision2D other)

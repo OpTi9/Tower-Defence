@@ -10,9 +10,9 @@ public class WaveManager : MonoBehaviour
     [Header("Attributes")]
     [SerializeField] private GameObject[] enemyPrefabs;
     
-    [SerializeField] TextMeshProUGUI waveUI;
-    [SerializeField] TextMeshProUGUI enemiesLeftToSpawnUI;
-    [SerializeField] TextMeshProUGUI countdownUI;
+    [SerializeField] private TextMeshProUGUI waveUI;
+    [SerializeField] private TextMeshProUGUI enemiesLeftToSpawnUI;
+    [SerializeField] private TextMeshProUGUI countdownUI;
 
     [Header("Wave Settings")]
     [SerializeField] private int baseEnemies;
@@ -24,7 +24,7 @@ public class WaveManager : MonoBehaviour
     // Singleton instance
     public static WaveManager Instance { get; private set; }
 
-    public static UnityEvent onEnemyDestroy = new UnityEvent();
+    public readonly static UnityEvent onEnemyDestroy = new UnityEvent();
 
     private int currentWave = 1;
     private float timeSinceLastSpawn;
