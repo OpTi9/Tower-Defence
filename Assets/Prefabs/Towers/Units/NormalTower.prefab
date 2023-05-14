@@ -52,8 +52,8 @@ MonoBehaviour:
   sellButton: {fileID: 7687587468008798705}
   towerLevelUI: {fileID: 1314213121669248481}
   damage: 5
-  attackSpeed: 1.2
-  range: 2.3
+  attackSpeed: 0.9
+  range: 2.5
   towerCost: 20
   projectilePrefab: {fileID: 4783738655787574512, guid: 29df24b1344aabe4183e33cf7b25bf9c, type: 3}
   firingPoint: {fileID: 2491386769337110367}

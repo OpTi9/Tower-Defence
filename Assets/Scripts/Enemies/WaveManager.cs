@@ -17,6 +17,7 @@ public class WaveManager : MonoBehaviour
     [Header("Wave Settings")]
     [SerializeField] private int baseEnemies;
     [SerializeField] private float enemiesPerSecond;
+    [SerializeField] private float maxEnemiesPerSecond = 4f;
     [SerializeField] private float enemiesPerSecondGrowth = 0.1f;
     [SerializeField] public float timeBetweenWaves;
     [SerializeField] private float difficultyScalingFactor;
@@ -27,6 +28,12 @@ public class WaveManager : MonoBehaviour
     public readonly static UnityEvent onEnemyDestroy = new UnityEvent();
 
     private int currentWave = 1;
+    public int CurrentWave 
+    {
+        get { return currentWave; }
+        set { currentWave = value; }
+    }
+    
     private float timeSinceLastSpawn;
     private int enemiesAlive;
     private int enemiesLeftToSpawn;
@@ -103,7 +110,7 @@ public class WaveManager : MonoBehaviour
         currentPath = GameManager.Instance.GetPath();
 
         isSpawning = true;
-        enemiesPerSecond *= 1 + (currentWave - 1) * enemiesPerSecondGrowth;
+        enemiesPerSecond = Mathf.Min(maxEnemiesPerSecond, enemiesPerSecond * (1 + (currentWave - 1) * enemiesPerSecondGrowth));
         enemiesLeftToSpawn = EnemiesPerWave();
     }
 

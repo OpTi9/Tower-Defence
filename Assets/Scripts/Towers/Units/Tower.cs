@@ -56,11 +56,12 @@ public abstract class Tower : MonoBehaviour
         baseRange = range;
         upgradeCost = towerCost;
         towerLevel = 1;
-        
+        timeUntilFire = 1f / attackSpeed; // Make the first shot instant
+    
         upgradeButton.onClick.AddListener(Upgrade);
         sellButton.onClick.AddListener(Sell);
     }
-
+    
     protected virtual void Update()
     {
         if (target == null)
@@ -93,20 +94,21 @@ public abstract class Tower : MonoBehaviour
         Projectile projectileScript = projectileObject.GetComponent<Projectile>();
         projectileScript.SetTarget(target);
         projectileScript.SetDamage(damage);
-        timeUntilFire = 0f;
+        timeUntilFire = 0f; // Reset the time until the next shot
     }
-
+    
     private void FindTarget()
     {
         RaycastHit2D[] hits =
             Physics2D.CircleCastAll(transform.position, range, (Vector2) transform.position, 0f, enemyMask);
-        
+    
         if (hits.Length > 0)
         {
             target = hits[0].transform;
+            timeUntilFire = 1f / attackSpeed; // Reset the time until the first shot for the new target
         }
     }
-
+    
     private void RotateTowardsTarget()
     {
         float angle = Mathf.Atan2(target.position.y - transform.position.y, target.position.x - transform.position.x) *

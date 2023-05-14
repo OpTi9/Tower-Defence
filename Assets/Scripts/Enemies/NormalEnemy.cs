@@ -1,10 +1,10 @@
 using UnityEngine;
 
-public class EnemyNormal : Enemy
+public class NormalEnemy : Enemy
 {
     protected override void Start()
     {
         base.Start();
-        Debug.Log("EnemyNormal");
+        Debug.Log("NormalEnemy");
     }
 }

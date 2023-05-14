@@ -18,6 +18,7 @@ public abstract class Enemy : MonoBehaviour
     
     protected virtual void Start()
     {
+        speed = UnityEngine.Random.Range(speed, speed * 1.5f);
         originalSpeed = speed;
         if (spriteRenderer == null)
         {

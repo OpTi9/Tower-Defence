@@ -84,7 +84,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8e5d93fa835a0394a9aa407658f010d5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  health: 40
+  health: 30
   speed: 1.5
   reward: 15
   penalty: 3

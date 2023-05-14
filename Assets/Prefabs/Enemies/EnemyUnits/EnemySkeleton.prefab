@@ -9,9 +9,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8222650072124683546}
-  - component: {fileID: 2674681386732924176}
   - component: {fileID: 3527701381053647579}
   - component: {fileID: 7777647101924456180}
+  - component: {fileID: 2181115018625718715}
   m_Layer: 6
   m_Name: EnemySkeleton
   m_TagString: Untagged
@@ -35,23 +35,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &2674681386732924176
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2080202615531882846}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 66c54e9d7f2afa745acab493a2c6dff1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  health: 20
-  speed: 2
-  reward: 10
-  penalty: 2
-  spriteRenderer: {fileID: 2053567268309361950}
 --- !u!58 &3527701381053647579
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -89,6 +72,23 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 1
   m_Constraints: 0
+--- !u!114 &2181115018625718715
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2080202615531882846}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1c34c9ac6db9c3f4991c493a8a84ef54, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  health: 25
+  speed: 2
+  reward: 10
+  penalty: 2
+  spriteRenderer: {fileID: 2053567268309361950}
 --- !u!1 &5352591338300268187
 GameObject:
   m_ObjectHideFlags: 0

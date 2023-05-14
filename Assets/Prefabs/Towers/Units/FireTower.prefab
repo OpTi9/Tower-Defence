@@ -51,8 +51,8 @@ MonoBehaviour:
   upgradeButton: {fileID: 2679738800347840597}
   sellButton: {fileID: 5778512157348194608}
   towerLevelUI: {fileID: 3885972101363479417}
-  damage: 10
-  attackSpeed: 1
+  damage: 5
+  attackSpeed: 0.7
   range: 2
   towerCost: 60
   projectilePrefab: {fileID: 4783738655787574512, guid: de64810114aa8fc45a8f08f77ee53d47, type: 3}
