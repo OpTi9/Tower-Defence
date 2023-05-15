@@ -1,0 +1,182 @@
+@startuml
+
+class WaveManager {
+    - enemyPrefabs : GameObject[]
+    - waveUI : TextMeshProUGUI
+    - enemiesLeftToSpawnUI : TextMeshProUGUI
+    - countdownUI : TextMeshProUGUI
+    - baseEnemies : int
+    - enemiesPerSecond : float
+    - maxEnemiesPerSecond : float
+    - enemiesPerSecondGrowth : float
+    - timeBetweenWaves : float
+    - difficultyScalingFactor : float
+    - static Instance : WaveManager
+    + static onEnemyDestroy : UnityEvent
+    - currentWave : int
+    + CurrentWave : int { get; set; }
+    - timeSinceLastSpawn : float
+    - enemiesAlive : int
+    - enemiesLeftToSpawn : int
+    - isSpawning : bool
+    - currentPath : List<Vector2Int>
+    - countdownCoroutine : Coroutine
+    - countdownTime : float
+
+    + StartSpawningEnemies() : void
+    - EnemyDestroyed() : void
+    - StartWave(delay : float) : IEnumerator
+    - EndWave() : void
+    - SpawnEnemy() : void
+    - GetEnemyIndexForWave() : int
+    - EnemiesPerWave() : int
+    - StartCountdown(countdownTime : float) : void
+    - CountdownCoroutine() : IEnumerator
+}
+
+@enduml
+
+@startuml
+
+class HighScoreManager {
+    - static Instance : HighScoreManager
+    - const MaxHighScores : int
+    - const HighScoresKey : string
+    - highScores : List<HighScoreEntry>
+
+    + IsHighScore(score : int) : bool
+    + AddHighScore(playerName : string, score : int) : void
+    - LoadHighScores() : void
+    - SaveHighScores() : void
+}
+
+class HighScoreEntry {
+    + playerName : string
+    + score : int
+}
+
+class HighScoresData {
+    + highScores : List<HighScoreEntry>
+}
+
+HighScoreManager "1" -- "many" HighScoreEntry : contains
+HighScoreManager "1" -- "1" HighScoresData : uses
+
+@enduml
+
+@startuml
+
+title Enemy Use Case Diagram
+
+actor Enemy
+
+rectangle EnemyActions {
+    Enemy -- (Move Toward Goal)
+    Enemy -- (Damage Player)
+}
+
+@enduml
+
+@startuml
+
+title Player Use Case Diagram
+
+actor Player
+
+rectangle PlayerActions {
+    Player -- (Buy Tower)
+    Player -- (Sell Tower)
+    Player -- (Upgrade Tower)
+    Player -- (Place Tower)
+    Player -- (Start Wave)
+    Player -- (Enter High Score)
+    Player -- (View Leaderboard)
+    
+    (Buy Tower) .> (Normal Tower) : <<extends>>
+    (Buy Tower) .> (Fire Tower) : <<extends>>
+    (Buy Tower) .> (Ice Tower) : <<extends>>
+    
+    (Upgrade Tower) .> (Upgrade Normal Tower) : <<extends>>
+    (Upgrade Tower) .> (Upgrade Fire Tower) : <<extends>>
+    (Upgrade Tower) .> (Upgrade Ice Tower) : <<extends>>
+}
+
+@enduml
+
+@startuml
+
+title Tower Defense Game Use Case Diagram
+
+actor Player
+actor Enemy
+
+rectangle Game {
+    Player -- (Buy Tower)
+    Player -- (Sell Tower)
+    Player -- (Upgrade Tower)
+    Player -- (Place Tower)
+    Player -- (Start Wave)
+    Player -- (Enter High Score)
+    Player -- (View Leaderboard)
+    
+    (Buy Tower) .> (Normal Tower) : <<extends>>
+    (Buy Tower) .> (Fire Tower) : <<extends>>
+    (Buy Tower) .> (Ice Tower) : <<extends>>
+    
+    (Upgrade Tower) .> (Upgrade Normal Tower) : <<extends>>
+    (Upgrade Tower) .> (Upgrade Fire Tower) : <<extends>>
+    (Upgrade Tower) .> (Upgrade Ice Tower) : <<extends>>
+    
+    Enemy -- (Move Toward Goal)
+    Enemy -- (Damage Player)
+}
+
+@enduml
+
+@startuml
+
+title GridManager, Plot and AStarPathfinding Class Diagram
+
+class GridManager {
+    - rows : int
+    - columns : int
+    - cellSize : float
+    - squarePrefab : GameObject
+    - squareSize : float
+    - PlotGrid : Plot[,]
+    - Instance : GridManager
+    + Awake() : void
+    + Start() : void
+    + CreateGrid() : void
+    + GetPlotAtGridPosition(Vector2Int) : Plot
+    + GetWorldPosition(int, int) : Vector3
+    + GetGridPosition(Vector3) : Vector2Int
+    + IsWithinBounds(Vector2Int) : bool
+}
+
+class Plot {
+    - sr : SpriteRenderer
+    - hoverSprite : Sprite
+    - defaultSprite : Sprite
+    - tower : GameObject
+    - gridPosition : Vector2Int
+    + Start() : void
+    + OnMouseEnter() : void
+    + OnMouseExit() : void
+    + RemoveTower() : void
+    + SetTower(GameObject) : void
+    + HasTower() : bool
+    + OnMouseDown() : void
+}
+
+class AStarPathfinding {
+    - gridManager : GridManager
+    - directions : Vector2Int[]
+    + FindPath(Vector2Int, Vector2Int) : List<Vector2Int>
+    - Heuristic(Vector2Int, Vector2Int) : float
+    - ReconstructPath(Dictionary<Vector2Int, Vector2Int>, Vector2Int, Vector2Int) : List<Vector2Int>
+}
+
+GridManager "1" -- "1..*" Plot : contains
+AStarPathfinding "1" -- "1" GridManager : uses
+@enduml

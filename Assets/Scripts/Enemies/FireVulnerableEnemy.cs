@@ -9,7 +9,7 @@ public class FireVulnerableEnemy : Enemy, IFireDamageReceiver
     protected override void Start()
     {
         base.Start();
-        if(WaveManager.Instance.CurrentWave % 3 == 0)
+        if(WaveManager.Instance.CurrentWave % 2 == 0)
         {
             health += 5;
         }

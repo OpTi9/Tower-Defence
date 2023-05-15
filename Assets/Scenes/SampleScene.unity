@@ -7403,7 +7403,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1789308879996984204, guid: b80ba13173892f54689e8e6263c5173c, type: 3}
       propertyPath: difficultyScalingFactor
-      value: 1.2
+      value: 0.8
       objectReference: {fileID: 0}
     - target: {fileID: 1789308879996984204, guid: b80ba13173892f54689e8e6263c5173c, type: 3}
       propertyPath: enemyPrefabs.Array.size
