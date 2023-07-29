@@ -1,12 +1,8 @@
 # TOWER DEFENSE PROJECT
 
-This project represents the realization of a classic Tower Defense game in Unity game engine, following the instructions provided by my university professor. I hope you enjoy playing it as much as I did developing it. Contributions, improvements, and suggestions are always welcome!
+This project represents the realization of a classic Tower Defense game in Unity game engine, following the instructions provided by my university professor. I hope you enjoy playing it as much as I did developing it.
 
 ![screenshot](https://i.imgur.com/QTnvoY4.png)
-
-## Introduction
-
-Tower Defense, often abbreviated as TD, is a popular video game genre. In this strategy-based game, the primary objective is to defend a certain location from successive waves of enemies. This is accomplished by progressively building and upgrading defensive towers.
 
 ## Game Objective
 
@@ -14,9 +10,9 @@ In this Tower Defense game, your goal is to withstand enemy waves for as long as
 
 ## Towers
 
-You have the ability to build a variety of towers (for example, Water, Fire, etc.). Each tower type possesses certain bonuses against respective types of enemies (for example, a Water tower has a damage bonus against Fire enemies). These towers can also carry certain effects; for instance, an Ice tower can have a slowing effect, or a Fire tower can cause burn damage. Furthermore, towers can be upgraded to increase their attack power or enhance their effects, always in exchange for in-game currency.
+You have the ability to build a variety of towers. Each tower type possesses certain bonuses against respective types of enemies. These towers can also carry certain effects; for instance, an Ice tower can have a slowing effect. Furthermore, towers can be upgraded to increase their attack power or enhance their effects, always in exchange for in-game currency.
 
-Towers are constructed using an in-game currency (for example, Gold), which is collected each time an enemy is defeated. Players start the game with a reasonable amount of this currency to begin tower construction.
+Towers are constructed using an in-game currency, which is collected each time an enemy is defeated.
 
 ## Gameplay Mechanics
 
